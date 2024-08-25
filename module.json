@@ -1,0 +1,68 @@
+{
+	"id": "garhis-grotto-theme",
+	"title": "Garhi's Grotto - Theme",
+	"description": "A customized comprehensive UI theme.",
+	"version": "1.0.0",
+	"compatibility": {
+		"minimum": "12",
+		"verified": "12"
+	},
+	"authors": [
+		{
+			"name": "Garhi",
+			"email": "garhi@garhisgrotto.com",
+			"url": "http://www.garhisgrotto.com",
+			"discord": "garhi",
+			"flags": {}
+		}
+	],
+	"scripts": [
+		"/script/gg-theme.js"
+	],
+	"styles": [
+		"/css/gg-dark-mode.css",
+		"/css/gg-ui-changes.css",
+		"/css/gg-module-support.css"
+	],
+	"relationships":{
+		"recommends": [
+			{
+				"id": "garhis-grotto-module",
+				"type": "module",
+				"compatibility": {}
+			}
+		],
+		"systems": [
+			{
+				"id": "dnd5e",
+				"type": "system",
+				"compatibility": {
+					"minimum": "3.0.0",
+					"verified": "3.3.1",
+					"maximum": "3.9.9"
+				}
+			}
+		],
+		"requires": []
+	},
+	"flags": {
+		"hotReload": {
+			"extensions": ["css", "hbs", "json"],
+			"paths": ["templates", "styles", "lang"]
+		}
+	},
+	"media": [
+		{
+			"type": "setup",
+			"url": "modules/garhis-grotto-module/assets/art/branding/garhis-grotto-logo.webp",
+			"loop": false,
+			"flags": {}
+		}
+	],
+	"manifest": "",
+	"url": "http://www.garhisgrotto.com",
+	"download": "",
+	"readme": "",
+	"bugs": "",
+	"changelog": ""
+}
