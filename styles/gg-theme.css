@@ -1,0 +1,379 @@
+
+/* Globals */
+body.garhis-grotto {
+
+	--color-body-garhi-1: #21a4c5;
+	--color-body-garhi-2: #0dc726;
+	--color-body-garhi-3: #4f4f4f;
+	--color-body-garhi-4: #dd0c0c;
+	--color-body-garhi-5: #2d0de0;
+	--color-body-garhi-6: #d6da10;
+	--color-body-garhi-bright:#DfDfDf ;
+	--color-background-garhi-window: #2F2F2F;
+	--color-background-garhi-window-header: #070038;
+	--color-background-garhi-control: ;
+	--color-background-garhi-select: #bd7ce23a;
+	--color-background-garhi-editor: #6c61b862;
+	--color-border-garhi-editor: #c41badb0;
+	--color-background-garhi-card: #2b024e7e;
+	--color-background-garhi-card-dark: #0d0514;
+	--color-background-garhi-parchment: #0f02bf0a;
+	--color-gradient-garhi-sidebar-top: #12055A;
+	--color-gradient-garhi-sidebar-bottom: #4e1645;
+	--color-background-garhi-input: #6c61b862;
+	--color-background-garhi-button: #070038;
+	--color-border-garhi-button: #7877E7;
+	--color-text-garhi-button: #E3D5FF;
+	--color-background-garhi-hover: #7877E7;
+	--color-border-garhi-hover: #140485;
+	--color-text-garhi-hover: #0d0514;
+
+    --button-background-color: var(--color-background-garhi-button);
+    --button-border-color: var(--color-border-garhi-button);
+    --button-text-color: var(--text-garhi-button);
+    --button-focus-outline-color: var(--color-border-garhi-focused);
+    --button-hover-background-color: var(--color-background-garhi-hover);
+    --button-hover-border-color: var(--color-border-garhi-hover);
+    --button-hover-text-color: var(--color-text-garhi-hover);
+
+	--color-border-garhi: #C74BB6;
+	--color-border-garhi-primary: #7877E7;
+	--color-border-garhi-secondary: #f78fe9;
+	--color-border-garhi-tertiary: #5813d8;
+	--color-border-garhi-highlight: #ff0000;
+	--color-border-garhi-scrollbar: #5813d8;
+	--color-border-garhi-focused: #7877E7;
+	--color-border-garhi-1: #eeeeee;
+	--color-border-garhi-2: #dddddd;
+	--color-border-garhi-3: #cccccc;
+	--color-border-garhi-4: #bbbbbb;
+	--color-border-garhi-5: #999999;
+
+
+	--color-text-garhi-header: #E3D5FF;
+	--color-text-garhi-primary: #e6e7ec;
+	--color-text-garhi-secondary: #b4b5bb;
+	--color-text-garhi-inactive: #7a7971;
+	--color-text-garhi-highlight: #7877E7;
+	--color-text-garhi-input: var(--color-text-garhi-secondary);
+	--color-text-garhi-placeholder: var(--color-text-garhi-inactive);
+
+	--color-text-dark-header: var(--color-text-garhi-header);
+	--color-text-dark-primary: var(--color-text-garhi-primary);
+	--color-text-dark-secondary: var(--color-text-garhi-secondary);
+
+
+	--color-text-garhi-1: #eeeeee;
+	--color-text-garhi-2: #dddddd;
+	--color-text-garhi-3: #cccccc;
+	--color-text-garhi-4: #bbbbbb;
+	--color-text-garhi-5: #aaaaaa;
+	--color-text-garhi-6: #888888;
+
+	--color-text-garhi-hyperlink: #ff6400;
+
+	--color-shadow-garhi-primary: #d926bb;
+	--color-shadow-garhi-highlight: #bd7ce2;
+	--color-shadow-garhi-deep: #140485;
+
+	--color-garhi-underline-inactive: #7a7971;
+	--color-garhi-underline-active: #44191A;
+
+
+	--color-ownership-none: #5500ff;
+	--color-ownership-observer: #7a7971;
+	--color-ownership-owner: #b5b3a4;
+
+	/* --sidebar-width: 300px;
+	--sidebar-header-height: 32px;
+	--sidebar-item-height: 48px;
+
+	--hotbar-height: 52px;
+	--hotbar-width: 578px;
+
+	--players-width: 200px;
+
+	--macro-size: 50px; */
+
+	/* --color-level-error: #ce0707;
+	--color-level-error-bg: rgba(105, 0, 8, 0.8);
+	--color-level-error-border: #750003;
+	--color-level-info: #59a1f6;
+	--color-level-info-bg: rgba(47, 80, 132, 0.8);
+	--color-level-info-border: #5c87b9;
+	--color-level-success: #26b231;
+	--color-level-success-bg: rgba(26, 107, 34, 0.8);
+	--color-level-success-border: #1b8f23;
+	--color-level-warning: #ee9b3a;
+	--color-level-warning-bg: rgba(214, 150, 0, 0.8);
+	--color-level-warning-border: #b18404;*/
+
+	--color-scrollbar: #7877E7;
+	--color-scrollbar-track: transparent;
+	--color-scrollbar-border: var(--color-border-garhi-scrollbar);
+
+	--color-fieldset-border: var(--color-border-garhi-secondary);
+	--color-form-label: var(--color-text-garhi-primary);
+	--color-form-label-hover: var(--color-text-garhi-highlight);
+	--color-form-hint: var(--color-text-garhi-secondary);
+	--color-form-hint-hover: var(--color-text-garhi-highlight);
+	--color-hover-bg: var(--color-background-garhi-hover);
+	--color-control-bg: var(--color-background-garhi-control);
+
+	/* --color-bg-btn-minor-inactive: #c9c7b8;
+	--color-bg-btn-minor-active: #b5b3a4;
+	--color-checkbox-checked: #666; */
+
+	--texture-background-garhi: url(../assets/parchment-garhi.webp);
+
+
+	/* --line-height-12: 0.75rem;
+	--line-height-16: 1rem;
+	--line-height-20: 1.25rem;
+	--line-height-30: 1.875rem; */
+
+	/* --font-primary: "Signika", sans-serif; */
+
+	--dnd5e-color-card: var(--color-background-garhi-card);
+	--dnd5e-color-card-dark: var(--color-background-garhi-card-dark);
+	--dnd5e-color-card-tint: rgba(60, 57, 255, 0.192);
+	--dnd5e-color-parchment: var(--color-background-garhi-parchment);
+
+	--garhis-grotto-color-background: #0F0F0F;
+	--garhis-grotto-color-primary: #0d0514;
+	--garhis-grotto-color-secondary: #31136c;
+	--garhis-grotto-accent-primary: #524fde;
+	--garhis-grotto-accent-secondary: #d926bb;
+}
+
+body.garhis-grotto #logo {
+	display: none;
+}
+
+body.garhis-grotto li[data-tool="target"], body.garhis-grotto li[data-tool="togglebreak"],
+body.garhis-grotto li[data-tool="clearTargets"] {
+	display: none;
+}
+
+body.garhis-grotto .window-app {
+	--header-height: 36px;
+	--minimized-width: 200px;
+	--background: var(--color-background-garhi-window);
+	--color-text-primary: var(--color-text-garhi-primary);
+	--color-header-background: var(--color-background-garhi-window-header);
+	--color-border: var(--color-border-garhi-window);
+	/* --color-fieldset-border: var(--color-garhi-border-fieldset); */
+
+	/* --color-hover-bg: var(--color-body-garhi-2); */
+	/* --color-control-bg: var(--color-body-garhi-2); */
+	/* --color-select-option-bg: var(--color-form-garhi-selection-bg); */
+}
+
+body.garhis-grotto .window-app .window-header, .window-header {
+	/* flex: 0 0 30px;
+	overflow: hidden;
+	padding: 0 8px;
+	line-height: 30px; */
+	background: var(--color-background-garhi-window-header);
+	border-bottom: 1px solid var(--color-border-garhi-primary);
+}
+
+body.garhis-grotto .dialog .window-content, .window-app .window-content, .window-content {
+	background: var(--color-background-garhi-window);
+	color: var(--color-text-garhi-primary);
+}
+
+body.garhis-grotto .window-app .window-header .window-title {
+	margin: 2px;
+	word-break: break-all;
+}
+
+body.garhis-grotto select {
+    background: var(--color-background-garhi-select);
+    border: 1px solid var(--color-border-garhi-tertiary);
+}
+
+body.garhis-grotto input, select {
+    --input-background-color: var(--color-background-garhi-input);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-text-garhi-input);
+    --input-placeholder-color: var(--color-text-garhi-placeholder);
+    --input-focus-outline-color: var(--color-border-garhi-focused);
+}
+
+body.garhis-grotto .aside.sidebar {
+	border-right: 1px solid var(--color-border-garhi-secondary);
+	padding: 0.5rem, 0.5rem, 1.5rem, 0.5rem;
+}
+
+body.garhis-grotto button, body.garhis-grotto form button {
+	background: var(--color-background-garhi-button);
+	border: 1px solid var(--color-border-garhi-button);
+	color: var(--color-text-garhi-button);
+}
+
+body.garhis-grotto form .notes, form .hint {
+    color: var(--color-text-garhi-secondary);
+ }
+
+body.garhis-grotto #fast-tooltip {
+    position: absolute;
+	top: 60px;
+	left: 90px;
+    width: max-content;
+    max-width: 320px;
+    padding: 6px 6px;
+    background: var(--color-background-garhi-window);
+    /* font-family: var(--font-primary);
+    font-size: var(--font-size-16);
+    line-height: var(--font-size-16); */
+    color: var(--color-text-garhi-primary);
+    border: 1px solid var(--color-border-garhi-tertiary);
+    border-radius: 3px;
+    /* box-shadow: 0 0 4px #000;
+    z-index: var(--z-index-tooltip);
+    pointer-events: none;
+    overflow-wrap: break-word;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 500ms, opacity 500ms; */
+}
+
+body.garhis-grotto h1, h2, h3, h4 {
+	border: 0, 0, 0, 0;
+}
+
+/* body.garhis-grotto .flexrow > * {
+	flex: 1;
+} */
+
+/* body.garhis-grotto .form-group > label {
+	color: var(--color-text-garhi-primary);
+} */
+
+/* body.garhis-grotto.theme-garhisgrotto h4 {
+	display: block;
+	margin-block-start: 1.33em;
+	margin-block-end: 1.33em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	unicode-bidi: isolate;
+} */
+
+/* body.garhis-grotto select { color: #ffffff; } */
+/* body.garhis-grotto button {
+	color: #ffffff;
+	background-color: rgba(0, 0, 15, 0.8);
+} */
+/* body.garhis-grotto input { color-scheme: dark; }
+body.garhis-grotto input::placeholder{ color: var(--color-text-garhi-5); }
+body.garhis-grotto input[type="checkbox"]:checked,
+body.garhis-grotto input[type="radio"]:checked {
+	accent-color: midnightblue;
+	filter: grayscale(0.5);
+} */
+
+
+body.garhis-grotto .editor {
+	background: var(--color-background-garhi-editor);
+	color: var(--color-border-garhi-editor);
+}
+
+
+body.garhis-grotto #chat-form textarea {
+	background: var(--texture-background-garhi) repeat;
+	color: var(--color-text-garhi-primary);
+}
+
+/* body.garhis-grotto .prosemirror menu .pm-dropdown { background: #262737; }
+body.garhis-grotto #prosemirror-dropdown ul {
+	background-color: var(--dnd5e-color-card);
+	color: white;
+}
+body.garhis-grotto .prosemirror .editor-container {
+	border: 1px solid var(--color-garhi-6);
+	border-radius: 5px;
+}
+body.garhis-grotto #prosemirror-dropdown li:hover { background-color: var(--dnd5e-color-light-gray); }
+body.garhis-grotto .editor.prosemirror button {
+	background: hsl(224deg 43.33% 5.86%);
+	background: linear-gradient(to bottom right, #181c27, hsl(224deg 43.33% 5.86%));
+}
+body.garhis-grotto .prosemirror menu .pm-dropdown:hover i { color: white; }
+body.garhis-grotto .prosemirror menu button:hover,
+body.garhis-grotto .prosemirror menu button.active {
+	background: #0f0f1f;
+	color: white;
+}
+body.garhis-grotto .prosemirror.menu-dialog form {
+	color: var(--color-text-garhi-1);
+	border-color: var(--color-border-garhi-5);
+} */
+
+body.garhis-grotto a.inline-roll, body.garhis-grotto .editor a.content-link,
+body.garhis-grotto .filepicker .favorites .path, body.garhis-grotto .filepicker .display-modes a,
+body.garhis-grotto .dnd5e.advancement .items-list .content-link { background-color: var(--dnd5e-color-parchment); }
+body.garhis-grotto .dnd5e .form-group label,
+body.garhis-grotto .dnd5e.sheet .sheet-header .summary li,
+body.garhis-grotto .dnd5e.sheet.item .sheet-body .item-properties .properties-header { color: var(--color-text-garhi-secondary); }
+
+body.garhis-grotto .dnd5e2 .pills .pill.transparent,
+body.garhis-grotto .dnd5e2 .pills .pill.pill-sm { color: #b1b1b1; }
+body.garhis-grotto .directory .directory-item { border-top: 1px solid var(--color-border-garhi-5); }
+body.garhis-grotto .directory .directory-list > .directory-item:last-child { border-bottom: 1px solid var(--color-border-garhi-4); }
+body.garhis-grotto .sheet.journal-entry .journal-entry-content { background: url(../assets/parchment-garhi.webp) repeat; }
+body.garhis-grotto .journal-sidebar {
+	background: var(--color-body-garhi-2);
+}
+body.garhis-grotto .directory .directory-header .header-search input { background: rgba(0, 0, 10, 0.8); }
+/* body.garhis-grotto .window-app .window-content {
+	background: url(../assets/parchment-garhi.webp) repeat;
+	background: hsl(260, 55, 5);
+	background: linear-gradient(to bottom right, hsl(260, 60%, 10%), hsl(260, 65%, 15%));
+} */
+body.garhis-grotto.change-windows:not(.system-forbidden-lands) .window-app:not(.dnd5e2.character) > header {
+	background: hsl(260, 71, 5);
+	background: linear-gradient(to right, hsl(260, 71, 5), hsl(260, 65, 10));
+}
+/* body.garhis-grotto .window-app:not(.monarch, .dnd5e2) .window-header a:not(.close, .document-id-link) { background: rgb(13, 5, 20, 75%); }
+body.garhis-grotto .window-app:not(.monarch, .dnd5e2) .window-header a:not(.close, .document-id-link):hover { background: rgb(25 25 25 / 50%); } */
+body.garhis-grotto :is(#tooltip, .locked-tooltip).dnd5e-tooltip {
+	background: url(../assets/texture-gray1-garhi.webp) no-repeat top left,
+	url(../assets/texture-gray2-garhi.webp) no-repeat bottom right,
+	var(--dnd5e-color-parchment);
+}
+body.garhis-grotto #sidebar #chat-log .chat-message::before { opacity: 15%; }
+body.garhis-grotto :is(.chat-popout, #chat-log) .message {
+	background: hsl(224, 48.39%, 6.08%);
+	background: linear-gradient(to right, #01004C, hsl(224, 48.39%, 6.08%));
+}
+body.garhis-grotto :is(.chat-popout, #chat-log) .message.whisper {
+	background: hsl(53, 76%, 7%);
+	background: linear-gradient(to right, #121000, hsl(53, 76%, 7%));
+}
+body.garhis-grotto :is(.chat-popout, #chat-log) .message.blind {
+	background: hsl(0, 71%, 4%);
+	background: linear-gradient(to right, #120000, hsl(0, 71%, 4%));
+}
+
+body.garhis-grotto .dnd5e2.chat-card .description { background: var(--dnd5e-color-card-tint); }
+
+body.garhis-grotto .dnd5e2 .card{ background-color: var(--dnd5e-color-card); }
+body.garhis-grotto .dnd5e2 .card img{ filter: invert(0); }
+
+body.garhis-grotto .dnd5e.sheet .editable h4.rollable:hover,
+body.garhis-grotto .dnd5e.sheet .editable .rollable:hover > h4 { color: #ffffff; }
+
+body.garhis-grotto .app.sidebar-popout {
+	backdrop-filter: none;
+}
+
+/* body.garhis-grotto .sheet.journal-entry {
+	--sidebar-width-expanded: 300px;
+	--sidebar-width-collapsed: 32px;
+	--level-indent: 16px;
+	--page-number-width: 20px;
+	min-width: 680px;
+	min-height: 680px;
+} */

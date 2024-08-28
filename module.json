@@ -16,13 +16,13 @@
 			"flags": {}
 		}
 	],
-	"scripts": [
-		"/script/gg-theme.js"
+	"esmodules": [
+		"scripts/gg-theme.js"
 	],
 	"styles": [
-		"/css/gg-dark-mode.css",
-		"/css/gg-ui-changes.css",
-		"/css/gg-module-support.css"
+		"/styles/gg-theme.css",
+		"/styles/gg-theme-sidebar.css",
+		"/styles/gg-theme-module-support.css"
 	],
 	"relationships":{
 		"recommends": [
@@ -47,8 +47,8 @@
 	},
 	"flags": {
 		"hotReload": {
-			"extensions": ["css", "hbs", "json"],
-			"paths": ["templates", "styles", "lang"]
+			"extensions": ["css", "hbs"],
+			"paths": ["styles", "templates"]
 		}
 	},
 	"media": [
