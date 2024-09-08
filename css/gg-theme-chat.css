@@ -1,0 +1,414 @@
+/* Summary of Changes
+ *
+ *
+ *
+ *
+*/
+body.garhis-grotto.theme #chat.chat-sidebar,
+body.garhis-grotto.theme.dark-mode #chat.chat-sidebar {
+
+/*
+   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+   *  *  *  *  *  *  *  *  *  *  *  CHAT THEME  *  *  *  *  *  *  *  *  *  *  *  *  *
+   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+*/
+   /*
+      *  *  *  *  *  *  *  *  *  *  *
+      *  *  * SHARED ELEMENTS *  *  *
+      *  *  *  *  *  *  *  *  *  *  *
+   */
+   --gg-theme-chat-text-color-link:             hsl(290, 100%, 75%);
+   --gg-theme-chat-text-color-selection:        hsl(50, 48%, 90%);
+   --gg-theme-chat-background-color-selection:  hsl(265, 100%, 30%);
+      /*
+         *  *  * SHADOW COLOR *  *  *
+      */
+   --gg-theme-chat-shadow-color-base:        hsl(180, 100%, 50%);
+   --gg-theme-chat-shadow-color-highlight:   hsl(285, 80%, 25%);
+   --gg-theme-chat-shadow-color-active:      hsl(290, 100%, 75%);
+   /*
+      *  *  *  *  *  *  *  *  *  *
+      *  *  *  Chat Cards  *  *  *
+      *  *  *  *  *  *  *  *  *  *
+   */
+      /*
+         *  *  * BACKGROUND COLOR *  *  *
+      */
+   --gg-theme-chat-background-color-gradient-card-base:     hsla(57, 75%, 75%, 50%);
+   --gg-theme-chat-background-color-gradient-card-standard: hsla(240, 60%, 50%, 50%);
+   --gg-theme-chat-background-color-gradient-card-whisper:  hsla(300, 85%, 55%, 50%);
+   --gg-theme-chat-background-color-gradient-card-blind:    hsla(0, 0%, 25%, 50%);
+   --gg-theme-chat-background-color-gradient-card-damage:   hsla(0, 85%, 40%, 50%);
+   --gg-theme-chat-background-color-gradient-card-healing:  hsla(120, 85%, 40%, 50%);
+   --gg-theme-chat-background-color-gradient-card-temp:     hsla(210, 85%, 40%, 50%);
+   --gg-theme-chat-background-texture-gradient-base:
+         url('../assets/art/textures/gg-theme-alternate-texture-parchment.webp');
+
+      /*
+         *  *  * TEXT COLOR *  *  *
+      */
+   --gg-theme-chat-text-color-card-base:     hsl(20, 10%, 85%);
+   --gg-theme-chat-text-color-card-standard: hsl(20, 10%, 85%);
+   --gg-theme-chat-text-color-card-whisper:  hsl(20, 10%, 85%);
+   --gg-theme-chat-text-color-card-blind:    hsl(20, 10%, 85%);
+   --gg-theme-chat-text-color-card-damage:   hsl(20, 10%, 85%);
+   --gg-theme-chat-text-color-card-healing:  hsl(20, 10%, 85%);
+   --gg-theme-chat-text-color-card-temp:     hsl(20, 10%, 85%);
+      /*
+         *  *  * BORDER COLOR *  *  *
+      */
+   --gg-theme-chat-border-color-card-base:      hsl(0, 0%, 9%);
+   --gg-theme-chat-border-color-card-standard:  hsl(265, 100%, 50%);
+   --gg-theme-chat-border-color-card-whisper:   hsl(265, 100%, 30%);
+   --gg-theme-chat-border-color-card-blind:     hsl(265, 100%, 30%);
+   --gg-theme-chat-border-color-card-damage:    hsl(0, 100%, 30%);
+   --gg-theme-chat-border-color-card-healing:   hsl(113, 100%, 30%);
+   --gg-theme-chat-border-color-card-temp:      hsl(204, 100%, 30%);
+      /*
+         *  *  * BASE *  *  *
+      */
+   --gg-theme-chat-background-color-card-base:
+   linear-gradient(to right,
+      var(--gg-theme-chat-background-color-gradient-card-base),
+      var(--gg-theme-chat-background-color-gradient-card-base));
+      /*
+         *  *  * STANDARD *  *  *
+      */
+   --gg-theme-chat-background-color-card-standard:
+      linear-gradient(to right,
+         var(--gg-theme-chat-background-color-gradient-card-standard),
+         var(--gg-theme-chat-background-color-gradient-card-base));
+      /*
+         *  *  * WHISPER *  *  *
+      */
+   --gg-theme-chat-background-color-card-whisper:
+      linear-gradient(to right,
+         var(--gg-theme-chat-background-color-gradient-card-whisper),
+         var(--gg-theme-chat-background-color-gradient-card-base));
+      /*
+         *  *  * BLIND *  *  *
+      */
+   --gg-theme-chat-background-color-card-blind:
+      linear-gradient(to right,
+         var(--gg-theme-chat-background-color-gradient-card-blind),
+         var(--gg-theme-chat-background-color-gradient-card-base));
+      /*
+         *  *  * DAMAGE *  *  *
+      */
+   --gg-theme-chat-background-color-card-damage:
+      linear-gradient(to right,
+         var(--gg-theme-chat-background-color-gradient-card-damage),
+         var(--gg-theme-chat-background-color-gradient-card-base));
+      /*
+         *  *  * HEALING *  *  *
+      */
+   --gg-theme-chat-background-color-card-healing:
+      linear-gradient(to right,
+         var(--gg-theme-chat-background-color-gradient-card-healing),
+         var(--gg-theme-chat-background-color-gradient-card-base));
+      /*
+         *  *  TEMP HEALING  *  *
+      */
+   --gg-theme-chat-background-color-card-temp:
+      linear-gradient(to right,
+         var(--gg-theme-chat-background-color-gradient-card-temp),
+         var(--gg-theme-chat-background-color-gradient-card-base));
+   /*
+      *  *  *  *  *  *  *  *  *  *
+      *  *  * CHAT MESSAGE *  *  *
+      *  *  *  *  *  *  *  *  *  *
+   */
+      /*
+         *  *  * HEADER *  *  *
+      */
+   --gg-theme-chat-background-overlay-color-message-header: hsla(265, 80%, 30%, 50%);
+   --gg-theme-chat-border-color-message-header:             hsl(50, 100%, 50%);
+   --gg-theme-chat-background-size-message-header-height: 1.3rem;
+
+   --gg-theme-chat-text-color-message-header-title:         hsl(50, 100%, 40%);
+   --gg-theme-chat-text-size-message-header-title: 1.125rem;
+
+   --gg-theme-chat-text-color-message-header-secondary:     hsl(50, 100%, 40%);
+   --gg-theme-chat-text-size-message-header-secondary: 1.075rem;
+      /*
+         *  *  * DESCRIPTION *  *  *
+      */
+   --gg-theme-chat-background-overlay-color-card-description:  hsla(265, 80%, 80%, 10%);
+   --gg-theme-chat-border-color-card-description:              hsl(50, 100%, 50%);
+   --gg-theme-chat-text-color-card-description:                hsl(50, 100%, 50%);
+   --gg-theme-chat-background-size-card-description-height: 0.9rem;
+
+   /*
+      *  *  *  *  *  *  *  *  *
+      *  *  *  BUTTON   *  *  *
+      *  *  *  *  *  *  *  *  *
+   */
+      /*
+         *  *  * BASE *  *  *
+      */
+   --gg-theme-chat-text-font-button: 'Inknut Antiqua', serif;
+   --gg-theme-chat-background-color-button:  hsl(255, 100%, 20%);
+   --gg-theme-chat-border-color-button:      hsl(50, 100%, 40%);
+   --gg-theme-chat-text-color-button:        hsl(50, 58%, 77%);
+      /*
+         *  *  * HOVER *  *  *
+      */
+   --gg-theme-chat-background-color-button-hover:  hsl(255, 100%, 20%);
+   --gg-theme-chat-border-color-button-hover:      hsl(310, 100%, 50%);
+   --gg-theme-chat-text-color-button-hover:        hsl(30, 100%, 50%);
+      /*
+         *  *  * ACTIVE *  *  *
+      */
+   --gg-theme-chat-background-color-button-active: hsl(285, 80%, 20%);
+   --gg-theme-chat-border-color-button-active:     hsl(290, 58%, 77%);
+   --gg-theme-chat-text-color-button-active:       hsl(50, 48%, 90%);
+
+   /*
+      *  *  *  *  *  *  *  *  *
+      *  *  *  FORM  *  *  *  *
+      *  *  *  *  *  *  *  *  *
+   */
+      /*
+         *  *  * BASIC *  *  *
+      */
+   --gg-theme-chat-text-color-form-label:       hsl(22, 10%, 85%);
+   --gg-theme-chat-text-color-form-note:        hsl(50, 80%, 80%);
+   --gg-theme-chat-border-color-form-fieldset:  hsl(285, 80%, 20%);
+   --gg-theme-chat-border-color-form-focus:     hsl(253, 41%, 33%);
+      /*
+         *  *  * INPUT *  *  *
+      */
+   --gg-theme-chat-background-color-form-input:       hsl(30, 30%, 80%);
+   --gg-theme-chat-border-color-form-input:           hsl(285, 80%, 20%);
+   --gg-theme-chat-text-color-form-input:             hsl(260, 40%, 20%);
+   --gg-theme-chat-text-color-form-input-placeholder: hsl(265, 20%, 10%);
+      /*
+         *  *  * SELECT *  *  *
+      */
+   --gg-theme-chat-background-color-form-select:         hsl(30, 30%, 80%);
+   --gg-theme-chat-background-color-form-select-option:  hsla(30, 10%, 85%, 80%);
+   --gg-theme-chat-border-color-form-select:             hsl(285, 80%, 20%);
+   --gg-theme-chat-text-color-form-select-option:        hsl(260, 34%, 13%);
+
+/*
+   *  *  *  *  *  *  *  *  *  *  *  *  *  *
+   *  *  *  *  *   VARIABLE   *  *  *  *  *
+   *  *  *  *  *  Overrides   *  *  *  *  *
+   *  *  *  *  *  *  *  *  *  *  *  *  *  *
+*/
+	--dnd5e-color-application-damage: var(--gg-theme-chat-background-color-card-damage);
+   --dnd5e-color-application-healing: var(--gg-theme-chat-background-color-card-healing);
+   --dnd5e-color-application-temp: var(--gg-theme-chat-background-color-card-temp);
+   --color-text-selection: var(--gg-theme-chat-text-color-selection);
+   --color-text-selection-bg: var(--gg-theme-chat-background-color-selection);
+
+
+   /*
+      *  *  *  *  *  *  *  *  *
+      *  *  *  BUTTON   *  *  *
+      *  *  *  *  *  *  *  *  *
+   */
+   & button {
+      background: var(--gg-theme-chat-background-color-button);
+      border: 1px solid var(--gg-theme-chat-border-color-button);
+      color: var(--gg-theme-chat-text-color-button);
+      width: max-content;
+      &:hover {
+         background-color: var(--gg-theme-chat-background-color-button-hover);
+         border: 1px solid var(--gg-theme-chat-border-color-button-hover);
+         color: var(--gg-theme-chat-text-color-button-hover);
+      }
+      &:active {
+         background-color: var(--gg-theme-chat-background-color-button-active);
+         border: 1px solid var(--gg-theme-chat-border-color-button-active);
+         color: var(--gg-theme-chat-text-color-button-active);
+      }
+   }
+
+   /*
+      *  *  *  *  *  *  *  *  *
+      *  *  Chat Cards  *  *  *
+      *  *  *  *  *  *  *  *  *
+   */
+
+   & :is(.chat-popout, #chat-log)  {
+      & li.message,
+      & li.chat-message {
+         background: var(--gg-theme-chat-background-color-gradient-card-base),
+         var(--gg-theme-chat-background-texture-gradient-base);
+         border: 2px groove var(--gg-theme-chat-border-color-card-base);
+         color: var(--gg-theme-chat-text-color-card-base);
+         &.standard {
+            background-color: var(--gg-theme-chat-background-color-card-standard);
+            border-left: 3px ridge var(--gg-theme-chat-border-color-card-standard);
+            color: var(--gg-theme-chat-text-color-card-standard);
+         }
+         &.whisper {
+            background-color: var(--gg-theme-chat-background-color-card-whisper);
+            border-left: 3px ridge var(--gg-theme-chat-border-color-card-whisper);
+            color: var(--gg-theme-chat-text-color-card-whisper);
+         }
+         &.blind {
+            background-color: var(--gg-theme-chat-background-color-card-blind);
+            border-left: 3px ridge var(--gg-theme-chat-border-color-card-blind);
+            color: var(--gg-theme-chat-text-color-card-blind);
+         }
+         &.damage {
+            background-color: var(--gg-theme-chat-background-color-card-damage);
+            border-left: 3px ridge var(--gg-theme-chat-border-color-card-damage);
+            color: var(--gg-theme-chat-text-color-card-damage);
+         }
+         &.healing {
+            background-color: var(--gg-theme-chat-background-color-card-healing);
+            border-left: 3px ridge var(--gg-theme-chat-border-color-card-healing);
+            color: var(--gg-theme-chat-text-color-card-healing);
+         }
+         &.temp {
+            background-color: var(--gg-theme-chat-background-color-card-temp);
+            border-left: 3px ridge var(--gg-theme-chat-border-color-card-temp);
+            color: var(--gg-theme-chat-text-color-card-temp);
+         }
+         &>header.message-header {
+            background: var(--gg-theme-chat-background-overlay-color-message-header);
+            border-bottom: 1px groove var(--gg-theme-chat-border-color-message-header);
+            height: var(--gg-theme-chat-background-size-message-header-height);
+            & .title {
+               color: var(--gg-theme-chat-text-color-message-header-title);
+               font-size: var(--gg-theme-chat-text-size-message-header-title);
+            }
+            & .subtitle,
+            & time {
+               color: var(--gg-theme-chat-text-color-message-header-secondary);
+               font-size: var(--gg-theme-chat-text-size-message-header-secondary);
+            }
+         }
+         &.message-content {
+            background: var(--gg-theme-chat-background-overlay-color-message-header);
+            border-bottom: 1px groove var(--gg-theme-chat-border-color-message-header);
+            height: var(--gg-theme-chat-background-size-message-header-height);
+               & .title {
+                  color: var(--gg-theme-chat-text-color-message-header-title);
+                  font-size: var(--gg-theme-chat-text-size-message-header-title);
+               }
+               & .subtitle,
+               & time {
+                  color: var(--gg-theme-chat-text-color-message-header-secondary);
+                  font-size: var(--gg-theme-chat-text-size-message-header-secondary);
+               }
+            }
+         & .dnd5e2.chat-card .description {
+            background-color: var(--gg-theme-chat-background-overlay-color-card-description);
+            border-left: 3px ridge var(--gg-theme-chat-border-color-card-description);
+            color: var(--gg-theme-chat-text-color-card-description);
+         }
+      }
+   }
+
+   /* Trinium Buttons */
+   & #chat-controls-wrapper>#chat-controls
+      & button{
+      & .tcb-button {
+         background: var(--gg-theme-chat-background-color-button);
+         border: 1px solid var(--gg-theme-chat-border-color-button);
+         color: var(--gg-theme-chat-text-color-button);
+         width: max-content;
+         &:hover {
+            background-color: var(--gg-theme-chat-background-color-button-hover);
+            border: 1px solid var(--gg-theme-chat-border-color-button-hover);
+            color: var(--gg-theme-chat-text-color-button-hover);
+            box-shadow: inset 0 0 10px var(--gg-theme-chat-shadow-color-highlight);
+         }
+         &:active {
+            background-color: var(--gg-theme-chat-background-color-button-active);
+            border: 1px solid var(--gg-theme-chat-border-color-button-active);
+            color: var(--gg-theme-chat-text-color-button-active);
+            box-shadow: 0 0 10px var(--gg-theme-chat-shadow-color-active);
+         }
+      }
+      /* & #tcb-combat-tracker-toggle {
+         flex: 0 0 60%;
+         animation: none;
+      } */
+   }
+   /* Polyglot */
+   & #polyglot {
+      color: var(--gg-theme-chat-text-color-label);
+      &select {
+         background: var(--gg-theme-chat-background-color-form-select);
+         border: 1px solid var(--gg-theme-chat-border-color-form-select);
+         color: var(--gg-theme-chat-text-color-form-select-option);
+         /* & [role="presentation"],
+         & [role="textbox"] {
+
+         } */
+      }
+   }
+   & #chat-form textarea {
+      background: var(--gg-theme-chat-background-color-form-input);
+      border: 1px solid var(--gg-theme-chat-border-color-form-input);
+      color: var(--gg-theme-chat-text-color-form-input);
+      &:placeholder {
+         color: var(--gg-theme-chat-text-color-form-input-placeholder);
+      }
+      &:focus {
+         background-color: var(--gg-theme-chat-border-color-form-focus-outline);
+      }
+   }
+}
+
+/*Chat Textfield Changes*/
+/* body.garhis-grotto.theme .chat-sidebar #chat-form,
+body.garhis-grotto.theme.dark-mode .chat-sidebar #chat-form {
+    flex: 0 0 65px;
+    margin: 2px 6px;
+}
+
+/*Dice Output Changes*/
+/* body.garhis-grotto.theme .chat-sidebar .message .dice-result .dice-total,
+body.garhis-grotto.theme.dark-mode .chat-sidebar .message .dice-result .dice-total {
+    font-size: var(--font-size-18);
+}
+body.garhis-grotto.theme .chat-sidebar .message .dice-result .dice-formula,
+body.garhis-grotto.theme .chat-sidebar .message .dice-result .dice-total,
+body.garhis-grotto.theme.dark-mode .chat-sidebar .message .dice-result .dice-total {
+    padding: 0.25rem;
+}
+body.garhis-grotto.theme .chat-sidebar .message .dice-result .dice-tooltip .dice .dice-rolls,
+body.garhis-grotto.theme.dark-mode .chat-sidebar .message .dice-result .dice-tooltip .dice .dice-rolls {
+    margin: 3px 0 3px 10px;
+}
+body.garhis-grotto.theme .chat-sidebar .message .dice-result .dice-tooltip .dice .total,
+body.garhis-grotto.theme.dark-mode .chat-sidebar .message .dice-result .dice-tooltip .dice .total {
+    flex-basis: 40%;
+}
+body.garhis-grotto.theme .chat-sidebar .message .dice-result .dice-tooltip .dice .total .label,
+body.garhis-grotto.theme.dark-mode .chat-sidebar .message .dice-result .dice-tooltip .dice .total .label {
+    font-size: var(--font-size-9);
+}
+body.garhis-grotto.theme .chat-sidebar .message .dice-result .dice-tooltip .dice .total .value,
+body.garhis-grotto.theme.dark-mode .chat-sidebar .message .dice-result .dice-tooltip .dice .total .value {
+    font-size: var(--font-size-18);
+}
+body.garhis-grotto.theme .chat-sidebar .message .dice-result .dice-tooltip .tooltip-part.constant,
+body.garhis-grotto.theme.dark-mode .chat-sidebar .message .dice-result .dice-tooltip .tooltip-part.constant {
+    min-height: 33px;
+}
+body.garhis-grotto.theme .chat-sidebar .message.round-marker{ padding: 0 0.3rem; } */
+
+/*MODULE FIX STYLINGS*/
+/*MidiQOL: Fixed Overflow Label Alignment*/
+/* body.garhis-grotto.theme .midi-qol-attack-roll,
+body.garhis-grotto.theme .midi-qol-damage-roll{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+body.garhis-grotto.theme .dnd5e2.chat-card { gap: 0.2rem; } */
+
+/*
+body.garhis-grotto.theme .dice-result .dice-total.success,
+body.garhis-grotto.theme .dice-result .dice-total.critical { background: #001000; }
+body.garhis-grotto.theme .dice-result .dice-total.failure,
+body.garhis-grotto.theme .dice-result .dice-total.fumble { background: #100000; } */

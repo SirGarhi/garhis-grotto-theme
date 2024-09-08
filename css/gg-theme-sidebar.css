@@ -1,0 +1,475 @@
+/* Summary of Changes
+ *
+ *
+ *
+ *
+*/
+body.garhis-grotto.theme #ui-right>#sidebar,
+body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
+
+    /*
+     *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+     *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+     *  *  *  *  *  *  *  *  *  *  SIDEBAR THEME  *  *  *  *  *  *  *  *  *  *  *  *  *
+     *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+     *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+  */
+
+   /*
+      *  *  *  *  *  *  *  *  *  *
+      *  *  SHARED ELEMENTS   *  *
+      *  *  *  *  *  *  *  *  *  *
+   */
+   --gg-theme-sidebar-background-color-gradient-1: var(--gg-theme-main-background-color-gradient-1);
+   --gg-theme-sidebar-background-color-gradient-2: var(--gg-theme-main-background-color-gradient-2);
+   --gg-theme-sidebar-background-color-gradient-3: var(--gg-theme-main-background-color-gradient-3);
+   --gg-theme-sidebar-background-color-gradient-4: var(--gg-theme-main-background-color-gradient-4);
+   --gg-theme-sidebar-background-texture: var(--gg-theme-main-background-texture-parchment);
+
+   --gg-theme-sidebar-shadow-color-dark: hsl(265, 100%, 15%);
+   --gg-theme-sidebar-shadow-color-base: hsl(180, 100%, 50%);
+   --gg-theme-sidebar-shadow-color-highlight: hsl(285, 80%, 25%);
+   --gg-theme-sidebar-shadow-color-active: hsl(290, 100%, 75%);
+
+   /*
+      *  *  *  *  *  *  *  *  *  *  *
+      *  *  * Sidebar Window  *  *  *
+      *  *  *  *  *  *  *  *  *  *  *
+   */
+   --gg-theme-sidebar-background-color-gradient-sidebar:
+      linear-gradient(to bottom,
+         var(--gg-theme-sidebar-background-color-gradient-1),
+         var(--gg-theme-sidebar-background-color-gradient-2),
+         var(--gg-theme-sidebar-background-color-gradient-3),
+         var(--gg-theme-sidebar-background-color-gradient-4)),
+      var(--gg-theme-sidebar-background-texture) repeat;
+   --gg-theme-sidebar-border-color-sidebar-separator: hsl(50, 100%, 50%);
+
+   /*
+      *  *  *  *  *  *  *  *  *  *
+      *  *  *  NAV HEADER  *  *  *
+      *  *  *  *  *  *  *  *  *  *
+   */
+   --gg-theme-sidebar-background-color-nav-header: hsla(265, 100%, 30%, 60%);
+   --gg-theme-sidebar-border-color-nav-header: hsl(300, 100%, 20%);
+   --gg-theme-sidebar-nav-header-size-height: 30px;
+
+   /*
+      *  *  *  *  *  *  *  *  *  *
+      *  *  *  TAB BUTTON  *  *  *
+      *  *  *  *  *  *  *  *  *  *
+   */
+      /*
+         *  *  * BASE *  *  *
+      */
+   --gg-theme-sidebar-background-size-tab-button-width: 24px;
+   --gg-theme-sidebar-background-color-tab-button: hsl(255, 80%, 20%);
+   --gg-theme-sidebar-border-color-tab-button: hsl(50, 90%, 40%);
+   --gg-theme-sidebar-text-color-tab-button: hsl(44, 75%, 68%);
+      /*
+         *  *  * HOVER *  *  *
+      */
+   --gg-theme-sidebar-background-color-tab-button-hover: hsla(50, 100%, 50%, 30%);
+   --gg-theme-sidebar-border-color-tab-button-hover: hsl(285, 80%, 20%);
+   --gg-theme-sidebar-text-color-tab-button-hover: hsl(275, 80%, 40%);
+      /*
+         *  *  * ACTIVE *  *  *
+      */
+   --gg-theme-sidebar-background-color-tab-button-active: hsl(270, 80%, 25%);
+   --gg-theme-sidebar-border-color-tab-button-active: hsl(45, 80%, 50%);
+   --gg-theme-sidebar-text-color-tab-button-active: hsl(45, 75%, 60%);
+      /*
+         *  *  * COLLAPSE *  *  *
+      */
+   --gg-theme-sidebar-background-color-tab-button-collapse: hsl(255, 80%, 20%);
+   --gg-theme-sidebar-border-color-tab-button-collapse: hsl(45, 5%, 95%);
+
+   /*
+      *  *  *  *  *  *  *  *  *  *
+      *  *  *  * BUTTON *  *  *  *
+      *  *  *  *  *  *  *  *  *  *
+   */
+      /*
+         *  *  * BASE *  *  *
+      */
+   --gg-theme-sidebar-text-font-button: 'Inknut Antiqua', serif;
+   --gg-theme-sidebar-background-color-button: hsl(255, 100%, 20%);
+   --gg-theme-sidebar-border-color-button: hsl(50, 100%, 40%);
+   --gg-theme-sidebar-text-color-button: hsl(50, 60%, 75%);
+      /*
+         *  *  * HOVER *  *  *
+      */
+   --gg-theme-sidebar-background-color-button-hover: hsl(255, 100%, 40%);
+   --gg-theme-sidebar-border-color-button-hover: hsl(310, 100%, 50%);
+   --gg-theme-sidebar-text-color-button-hover: hsl(30, 100%, 50%);
+      /*
+         *  *  * ACTIVE *  *  *
+      */
+   --gg-theme-sidebar-background-color-button-active: hsl(285, 80%, 20%);
+   --gg-theme-sidebar-border-color-button-active: hsl(290, 60%, 75%);
+   --gg-theme-sidebar-text-color-button-active: hsl(50, 50%, 90%);
+
+   /*
+      *  *  *  *  *  *  *  *  *  *
+      *  *  * DIRECTORY *  *  *  *
+      *  *  *  *  *  *  *  *  *  *
+   */
+      /*
+         *  *  * HEADER *  *  *
+      */
+   --gg-theme-sidebar-background-color-diretory-header: hsla(265, 100%, 30%, 60%);
+   --gg-theme-sidebar-border-color-diretory-header: hsl(300, 100%, 20%);
+   --gg-theme-sidebar-diretory-header-size-height: 30px;
+      /*
+         *  *  * ITEM *  *  *
+      */
+   --gg-theme-sidebar-border-color-item: hsl(25, 100%, 50%);
+   --gg-theme-sidebar-item-size-height: 30px;
+   /*
+      *  *  *  *  *  *  *  *  *  *
+      *  *  *  COMPENDIUM  *  *  *
+      *  *  *  *  *  *  *  *  *  *
+   */
+      /*
+         *  *  * NAME *  *  *
+      */
+   --gg-theme-sidebar-background-color-compendium-name: rgba(71, 10, 92, 0.75);
+   --gg-theme-sidebar-text-color-compendium-name: hsl(21, 9%, 69%);
+      /*
+         *  *  * SOURCE *  *  *
+      */
+   --gg-theme-sidebar-background-color-compendium-source: rgba(71, 10, 92, 0.75);
+   --gg-theme-sidebar-text-color-compendium-source: hsl(21, 9%, 69%);
+      /*
+         *  *  * TYPE *  *  *
+      */
+   --gg-theme-sidebar-background-color-compendium-actor: hsla(225, 100%, 70%, 0.741);
+   --gg-theme-sidebar-background-color-compendium-item: hsla(270, 20%, 60%, 0.741);
+   --gg-theme-sidebar-background-color-compendium-macro: hsla(200, 100%, 70%, 0.741);
+   --gg-theme-sidebar-background-color-compendium-journal: hsla(300, 100%, 50%, 0.741);
+   --gg-theme-sidebar-background-color-compendium-playlist: hsla(50, 100%, 50%, 0.741);
+   --gg-theme-sidebar-background-color-compendium-scene: hsla(120, 100%, 20%, 0.741);
+   --gg-theme-sidebar-background-color-compendium-adventure: hsla(0, 100%, 50%, 0.741);
+
+
+   /*
+      *  *  *  *  *  *  *  *  *  *
+      *  *  *  * FOLDER *  *  *  *
+      *  *  *  *  *  *  *  *  *  *
+   */
+      /*
+         *  *  * BORDER COLOR *  *  *
+      */
+   --gg-theme-sidebar-border-color-folder-sides: hsl(50, 100%, 50%);
+   --gg-theme-sidebar-border-color-folder-top: hsl(270, 100%, 50%);
+   --gg-theme-sidebar-border-color-folder-sub: hsl(260, 5%, 90%);
+      /*
+         *  *  * DEPTH COLOR *  *  *
+      */
+   --gg-theme-sidebar-background-color-folder-1-1: hsl(260, 100%, 20%);
+   --gg-theme-sidebar-background-color-folder-1-2: hsl(260, 40%, 40%);
+   --gg-theme-sidebar-background-color-folder-1-3: var(--gg-theme-sidebar-background-color-folder-1-1);
+   --gg-theme-sidebar-background-color-folder-1-4: var(--gg-theme-sidebar-background-color-folder-1-2);
+
+   --gg-theme-sidebar-background-color-folder-2-1: hsl(300, 100%, 20%);
+   --gg-theme-sidebar-background-color-folder-2-2: hsl(300, 40%, 40%);
+   --gg-theme-sidebar-background-color-folder-2-3: var(--gg-theme-sidebar-background-color-folder-2-1);
+   --gg-theme-sidebar-background-color-folder-2-4: var(--gg-theme-sidebar-background-color-folder-2-2);
+
+   --gg-theme-sidebar-background-color-folder-3-1: hsl(25, 100%, 30%);
+   --gg-theme-sidebar-background-color-folder-3-2: hsl(25, 80%, 60%);
+   --gg-theme-sidebar-background-color-folder-3-3: var(--gg-theme-sidebar-background-color-folder-3-1);
+   --gg-theme-sidebar-background-color-folder-3-4: var(--gg-theme-sidebar-background-color-folder-3-2);
+
+   --gg-theme-sidebar-background-color-folder-4-1: hsl(90, 79%, 15%);
+   --gg-theme-sidebar-background-color-folder-4-2: hsl(90, 59%, 30%);
+   --gg-theme-sidebar-background-color-folder-4-3: var(--gg-theme-sidebar-background-color-folder-4-1);
+   --gg-theme-sidebar-background-color-folder-4-4: var(--gg-theme-sidebar-background-color-folder-4-2);
+/*
+   *  *  *  *  *  *  *  *  *  *  *  *
+   *  *  * VARIABLE OVERRIDES *  *  *
+   *  *  *  *  *  *  *  *  *  *  *  *
+*/
+   --gg-theme-sidebar-color-scrollbar: hsl(25, 100%, 30%);
+   --color-scrollbar: var(--gg-theme-sidebar-color-scrollbar);
+   --color-scrollbar-track: transparent;
+   --color-scrollbar-border: transparent;
+
+/*
+   *  *  *  *  *  *  *  *  *  *  *  *
+   *  *  *  * MAIN SIDEBAR *  *  *  *
+   *  *  *  *  *  *  *  *  *  *  *  *
+*/
+   border-top: 3px groove var(--gg-theme-sidebar-border-color-nav-header);
+   background: var(--gg-theme-sidebar-background-color-gradient-sidebar);
+   border: none;
+   border-left: 3px ridge var(--gg-theme-sidebar-border-color-sidebar-separator);
+   box-sizing: border-box;
+   max-height: 100%;
+   max-width: 400px;
+   width: max-content;
+
+/*
+   *  *  *  *  *  *  *  *  *  *  *  *
+   *  *  *  *  NAV HEADER  *  *  *  *
+   *  *  *  *  *  *  *  *  *  *  *  *
+*/
+	& #sidebar-tabs {
+      background: var(--gg-theme-sidebar-background-color-nav-header);
+      border-bottom: 3px groove var(--gg-theme-sidebar-border-color-nav-header);
+      box-shadow: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 36px;
+      box-sizing: border-box;
+      margin:0;
+      height: var(--gg-theme-sidebar-nav-header-size-height);
+      width: max-content;
+      /* padding: 3px; */
+
+      &>a {
+         &:hover,
+         &.notification-pip {
+            background-color: var(--gg-theme-sidebar-background-color-tab-button-hover);
+            border-color: var(--gg-theme-sidebar-border-color-tab-button-hover);
+            color: var(--gg-theme-sidebar-text-color-tab-button-hover);
+            box-shadow: 0 0 2px var(--gg-theme-sidebar-shadow-color-highlight);
+         }
+      }
+      &>.item {
+         background: var(--gg-theme-sidebar-background-color-tab-button);
+         border: 2px solid var(--gg-theme-sidebar-border-color-tab-button);
+         color: var(--gg-theme-sidebar-text-color-tab-button);
+         border-radius: 8px 8px 0 0;
+         box-sizing: border-box;
+         width: var(--gg-theme-sidebar-background-size-tab-button-width);
+         height: var(--gg-theme-sidebar-background-size-tab-button-width);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         &.active {
+            background-color: var(--gg-theme-sidebar-background-color-tab-button);
+            border-color: var(--gg-theme-sidebar-border-color-tab-button-active);
+            color: var(--gg-theme-sidebar-text-color-tab-button-active);
+            box-shadow: 0 0 3px var(--gg-theme-sidebar-shadow-color-active);
+            text-shadow: 0 0 3px var(--gg-theme-sidebar-shadow-color-active);
+         }
+      }
+      &>.collapse {
+         background: var(--gg-theme-sidebar-background-color-tab-button-collapse);
+         border: 1px solid var(--gg-theme-sidebar-border-color-tab-button-collapse);
+         color: var(--gg-theme-sidebar-text-color-tab-button);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: calc(var(--gg-theme-sidebar-background-size-tab-button-width)/2);
+         height: var(--gg-theme-sidebar-background-size-tab-button-width);
+         border-radius: 0;
+         &:active {
+            background-color: var(--gg-theme-sidebar-background-color-tab-button);
+            border-color: var(--gg-theme-sidebar-border-color-tab-button-active);
+            color: var(--gg-theme-sidebar-text-color-tab-button-active);
+            box-shadow: 0 0 2px var(--gg-theme-sidebar-shadow-color-active);
+         }
+      }
+   }
+   /*
+      *  *  *  *  *  *  *  *  *  *  *
+      *  *  *  Directories *  *  *  *
+      *  *  *  *  *  *  *  *  *  *  *
+   */
+   & > .directory {
+      & .directory-header {
+         display: flex;
+         flex: none;
+         flex-flow: column nowrap;
+         align-items: center;
+         justify-content: space-around;
+         line-height: var(--gg-theme-sidebar-directory-header-size-height);
+         background: var(--gg-theme-sidebar-background-color-directory-header);
+         border-bottom: 3px groove var(--gg-theme-sidebar-border-directory-nav-header);
+      }
+      & .directory-list {
+         & .directory-item {
+            border-top: 1px solid var(--gg-theme-sidebar-border-color-item);
+            line-height: var(--gg-theme-sidebar-item-size-height);
+            &:last-child {
+               border-bottom: 1px solid var(--gg-theme-sidebar-border-color-item);
+            }
+            /*
+               *  *  *  *  *  *  *  *  *  *  *
+               *  *  *  *  Folders  *  *  *  *
+               *  *  *  *  *  *  *  *  *  *  *
+            */
+            &.folder {
+               padding: 1px 1px 1px 5px;
+               margin: 1px;
+               border: none;
+               border-left: 1px solid var(--gg-theme-sidebar-border-color-folder-sides);
+               border-right: 1px solid var(--gg-theme-sidebar-border-color-folder-sides);
+               &[data-folder-depth="1"] {
+                  background-color: var(--gg-theme-sidebar-background-color-folder-1-1);
+                  &.folder-color-2 {
+                     background-color: var(--gg-theme-sidebar-background-color-folder-2-1);
+                  }
+                  &.folder-color-3 {
+                     background-color: var(--gg-theme-sidebar-background-color-folder-3-1);
+                  }
+                  &.folder-color-4 {
+                     background-color: var(--gg-theme-sidebar-background-color-folder-4-1);
+                  }
+               }
+               &[data-folder-depth="2"] {
+                  background-color: var(--gg-theme-sidebar-background-color-folder-1-2);
+                  &.folder-color-2 {
+                     background-color: var(--gg-theme-sidebar-background-color-folder-2-2);
+                  }
+                  &.folder-color-3 {
+                     background-color: var(--gg-theme-sidebar-background-color-folder-3-2);
+                  }
+                  &.folder-color-4 {
+                     background-color: var(--gg-theme-sidebar-background-color-folder-4-2);
+                  }
+               }
+               &[data-folder-depth="3"] {
+                  background-color: var(--gg-theme-sidebar-background-color-folder-1-3);
+                  &.folder-color-2 {
+                     background-color: var(--gg-theme-sidebar-background-color-folder-2-3);
+                  }
+                  &.folder-color-3 {
+                     background-color: var(--gg-theme-sidebar-background-color-folder-3-3);
+                  }
+                  &.folder-color-4 {
+                     background-color: var(--gg-theme-sidebar-background-color-folder-4-3);
+                  }
+               }
+               &[data-folder-depth="4"] {
+                  background-color: var(--gg-theme-sidebar-background-color-folder-1-4);
+                  &.folder-color-2 {
+                     background-color: var(--gg-theme-sidebar-background-color-folder-2-4);
+                  }
+                  &.folder-color-3 {
+                     background-color: var(--gg-theme-sidebar-background-color-folder-3-4);
+                  }
+                  &.folder-color-4 {
+                     background-color: var(--gg-theme-sidebar-background-color-folder-4-4);
+                  }
+               }
+               & .folder-header {
+                  background-color: inherit;
+                  position: sticky;
+               }
+               & .subdirectory {
+                  border: 1px solid var(--gg-theme-sidebar-border-color-folder-sub);
+               }
+               &.collaped {
+                  & .folder-header {
+                     position: relative;
+                  }
+               }
+            }
+            /*
+               *  *  *  *  *  *  *  *  *  *  *
+               *  *  *  COMPENDIUMS *  *  *  *
+               *  *  *  *  *  *  *  *  *  *  *
+            */
+            &.compendium {
+               & .compendium-name {
+                  width: max-content;
+                  max-width: 80%;
+                  padding: 3px 12px;
+                  margin: 0;
+                  text-align: left;
+                  display: flex;
+                  flex: 0 1 auto;
+                  word-break: keep-all;
+                  background: var(--gg-theme-sidebar-background-color-compendium-name);
+                  color: var(--gg-theme-sidebar-text-color-compendium-name);
+                  justify-items: space-between;
+               }
+               & .compendium-footer .source {
+                  background: var(--gg-theme-sidebar-background-color-compendium-source);
+                  color: var(--gg-theme-sidebar-text-color-compendium-source);
+               }
+               & img.compendium-banner {
+                  display: none;
+               }
+               &[data-type="Actor"] {
+                  background-color: var(--gg-theme-sidebar-background-color-compendium-actor);
+               }
+               &[data-type="Item"] {
+                  background-color: var(--gg-theme-sidebar-background-color-compendium-item);
+               }
+               &[data-type="Macro"] {
+                  background-color: var(--gg-theme-sidebar-background-color-compendium-macro);
+               }
+               &[data-type="JournalEntry"] {
+                  background-color: var(--gg-theme-sidebar-background-color-compendium-journal);
+               }
+               &[data-type="Playlist"] {
+                  background-color: var(--gg-theme-sidebar-background-color-compendium-playlist);
+               }
+               &[data-type="Scene"] {
+                  background-color: var(--gg-theme-sidebar-background-color-compendium-scene);
+               }
+               &[data-type="Adventure"] {
+                  background-color: var(--gg-theme-sidebar-background-color-compendium-adventure);
+               }
+            }
+         }
+         &.compendium-type {
+            background: var(--gg-theme-sidebar-background-color-nav-header);
+            color: var(--gg-theme-sidebar-text-color-nav-header);
+            border: 2px double var(--gg-theme-sidebar-border-color-nav-header);
+         }
+      }
+      &  .folder-header>#context-menu,
+      &  .directory-item #context-menu,
+      &  .window-app #context-menu {
+         --context-menu-z-index: 100000;
+         --adjusted-context-spacing: calc(100% + 1px);
+         z-index: var(--context-menu-z-index);
+
+         &.expand-up,
+         &.expand-down {
+            top: var(--adjusted-context-spacing);
+         }
+      }
+   }
+   /*
+      *  *  *  *  *  *  *  *  *  *  *  *
+      *  *  *  *   BUTTON  *  *  *  *  *
+      *  *  *  *  *  *  *  *  *  *  *  *
+   */
+   & button {
+      background: var(--gg-theme-sidebar-background-color-button);
+      border: 1px solid var(--gg-theme-sidebar-border-color-button);
+      color: var(--gg-theme-sidebar-text-color-button);
+      &:hover {
+         background-color: var(--gg-theme-sidebar-background-color-button-hover);
+         border-color: var(--gg-theme-sidebar-border-color-button-hover);
+         color: var(--gg-theme-sidebar-text-color-tab-button-hover);
+         box-shadow: 0 0 6px inset var(--gg-theme-sidebar-shadow-color-highlight);
+      }
+      &:active {
+         background-color: var(--gg-theme-sidebar-background-color-button);
+         border-color: var(--gg-theme-sidebar-border-color-button-active);
+         color: var(--gg-theme-sidebar-text-color-button-active);
+         box-shadow: 0 0 4px 1px var(--gg-theme-sidebar-shadow-color-active);
+      }
+   }
+
+   /* &>.folder>.folder-header {
+      top: 0;
+      &+.subdirectory>.folder>.folder-header {
+         top: calc(var(--folder-header-height) + var(--small-gap));
+         &+.subdirectory>.folder>.folder-header {
+            top: calc(var(--folder-header-height) * 2 + var(--small-gap) * 2);
+            &+.subdirectory>.folder>.folder-header {
+               top: calc(var(--folder-header-height) * 3 + var(--small-gap) * 3);
+            }
+         }
+      }
+   } */
+}

@@ -1,0 +1,46 @@
+{
+    "DND5E": {
+      "Race": "Ancestry",
+      "RaceName": "Ancestry Name",
+      "RaceAdd":"Add Ancestry",
+      "RacialTraits": "Ancestral Traits",
+      "Feature.Race": "Ancestry Trait",
+      "FeaturesRace": "Ancestral Traits",
+      "ToolArtisans": "Artist's Tools",
+      "DamageThunder": "Sonic",
+      "DamageLightning":"Electric",
+      "ArmorClassDraconic": "Draconic Toughness",
+      "LanguagesStandard": "Trade Language",
+	  "itemRarity": { "veryCommon": "Mundane" },
+	  "Item.Property.StealthDisadvantage": "Noisy"
+    },
+    "ITEM":{
+      "TypeRace": "Ancestry",
+      "TypeRacePl": "Ancestries"
+    },
+    "TYPES": {
+      "Item": {
+        "race": "Ancestry",
+        "racePl": "Ancestries",
+		"loot": "Carried Items"
+      }
+    },
+	"GARHISGROTTO": {
+		"Exhaustion": {
+			"0": "No Negative Effects",
+			"1": "-2 to all D20 Tests and Spell Save DC",
+			"2": "-4 to all D20 Tests and Spell Save DC",
+			"3": "-6 to all D20 Tests and Spell Save DC",
+			"4": "-8 to all D20 Tests and Spell Save DC",
+			"5": "-10 to all D20 Tests and Spell Save DC",
+			"6": "Death by exhaustion."
+		}
+	},
+	"KCCC": {
+		"SchoolPsi": "Psionic",
+		"PsionicTalent": "Psionic Talent",
+		"PsionicDiscipline": "Psionic Discipline",
+		"Upgrade": "Upgrade"
+	}
+
+}

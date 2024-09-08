@@ -1,0 +1,384 @@
+/* DAE & Midi */
+/* body.garhis-grotto.theme .dae-sheet-header .dae-effect-title input { color: #ffffff; }
+body.garhis-grotto.theme .dae-fb-browser,
+body.garhis-grotto.theme.dark-mode .dae-fb-browser {
+	background: hsl(224deg 43.33% 5.86%);
+	background: linear-gradient(to bottom right, #181c27, hsl(224deg 43.33% 5.86%));
+	color: #dddddd;
+}
+body.garhis-grotto.theme .dae-fb-field-option.selected,
+body.garhis-grotto.theme.dark-mode .dae-fb-field-option.selected {
+	background-color: #181c27;
+	border: 1px solid #ff6400;
+}
+body.garhis-grotto.theme .dae-fb-field-option:hover { background-color: #111a31; }
+body.garhis-grotto.theme .dae-fb-toggle-button { background-color: rgb(75, 75, 75, 0.8); }
+body.garhis-grotto.theme .dae-fb-toggle-button.active { background-color: rgb(255, 0, 0, 0.25); }
+body.garhis-grotto.theme .dae-fb-tab-button.active,
+body.garhis-grotto.theme.dark-mode .dae-fb-tab-button.active {
+	background-color: #111a31;
+	border-bottom: 2px solid #ff6400;
+}
+body.garhis-grotto.theme .dnd5e2 .midi-buttons button { background: var(--dnd5e-color-card-tint); } */
+
+/*Module Fixes*/
+/* .app.simple-calendar .window-header .header-button.control.minimize,
+.app.simple-calendar .window-header .header-button.control.pin { display: none; }
+.app.simple-calendar .window-header .header-button.control.close { display: block; }
+.prosemirror .editor-container .editor-content { padding-left: 0.5rem; }
+.dae-effects-table { min-height: 0; }
+.dae-effects-tab .dae-priority { align-content: inherit; } */
+
+/* Action Pack */
+/* body.garhis-grotto.theme #action-pack .action-pack__container,
+body.garhis-grotto.theme.dark-mode #action-pack .action-pack__container {
+	background: var(--background-theme-primary-2);
+	color: var(--gg-theme-primary-text-color-primary-1);
+	border-right: var(--gg-theme-primary-color-border-primary-1);
+} */
+
+/* Taskbar & Start Menu */
+/* body.garhis-grotto.theme #smalltime-btn,
+body.garhis-grotto.theme #lock-btn,
+body.garhis-grotto.theme #fps-btn,
+body.garhis-grotto.theme.dark-mode #fps-btn {
+	display: none;
+}
+
+body.garhis-grotto.theme #taskbar,
+body.garhis-grotto.theme.dark-mode #taskbar {
+	color: var(--gg-theme-primary-text-color-heading);
+	background: var(--background-theme-primary-2);
+	backdrop-filter: none;
+	border: none;
+	border-top: var(--gg-theme-primary-color-border-primary-1);
+	width: calc(100vw - (600px));
+	height: 50px;
+	left: 250px;
+}
+
+body.garhis-grotto.theme #fast-tooltip,
+body.garhis-grotto.theme.dark-mode #fast-tooltip {
+	background: var(--background-theme-secondary-1);
+	color: var(--gg-theme-primary-text-color-primary-3);
+	border: var(--gg-theme-primary-color-border-primary-3);
+} */
+
+/* body.garhis-grotto.theme #tokenizer div.menu,
+body.garhis-grotto.theme #tokenizer div.view-layer-control { background: var(--dnd5e-color-card); }
+body.garhis-grotto.theme #tokenizer div.menu .section,
+body.garhis-grotto.theme #tokenizer div.view-layer-control .section { background-color: rgba(255, 255, 255, 0.2); }
+body.garhis-grotto.theme #tokenizer div.view-layer-control button:disabled { filter: opacity(0.5); }
+body.garhis-grotto.theme #tokenizer div.view-layer-control button.active { color: var(--dnd5e-color-dark); } */
+
+/* body.garhis-grotto.theme,
+body.garhis-grotto.theme.dark-mode {
+
+/* Polyglot
+	--polyglot-journal-color: 255, 180, 0;
+    --polyglot-journal-opacity: 0.25;
+    --polyglot-journal-color-temp: 255, 180, 0;
+    --polyglot-journal-opacity-temp: 0.25;
+
+/*Combat Carousel
+	--combatant-portrait-size: 100px;
+	--combatant-portrait-aspect: 1.5;
+	--combatant-portrait-border-radius: 0%;
+	--combatant-portrait-margin: 0 calc(var(--combatant-portrait-size)* 0.1);
+	--carousel-direction: row;
+	--carousel-overflow: hidden;
+	--carousel-alignment: center;
+	--carousel-align-items: "flex-end";
+	--carousel-font-family: "CaslonAntique", "Palatino Linotype", serif;
+	--attribute-bar-primary-color: #41AA7D;
+	--attribute-bar-secondary-color: rgba(53, 94, 77, 1);
+	--attribute-bar-primary-color2: #ffcd00;
+	--attribute-bar-portrait-color: #e62121;
+	--attribute-bar-secondary-color2: #634f00;
+	--carousel-tooltip-color: rgba(136, 136, 136, 0.873);
+	--carousel-tooltip-bg-color: rgb(43, 43, 43);
+	--combatant-portrait-image-border: url(/modules/combat-tracker-dock/assets/border.png);
+	--combatant-portrait-image-background: url(/ui/denim075.png)
+	--carousel-direction: row;
+    --combatant-portrait-margin: 0 calc(var(--combatant-portrait-size)* 0.1);
+    --carousel-overflow: visible hidden;
+    --carousel-alignment: center;
+    --carousel-align-items: flex-start;
+    --combatant-portrait-aspect: 1.5;
+    --combatant-portrait-border-radius: 0%;
+    --attribute-bar-primary-color: #41AA7D;
+    --attribute-bar-secondary-color: #20553e;
+    --attribute-bar-primary-color2: #ffcd00;
+    --attribute-bar-secondary-color2: #7f6600;
+    --attribute-bar-portrait-color: #e62121;
+    --carousel-tooltip-color: #888888;
+    --carousel-tooltip-bg-color: #2f2f2f;
+    --combatant-portrait-image-border: url(modules/combat-tracker-dock/assets/border.png);
+    --combatant-portrait-image-background: url(ui/denim075.png);
+
+/* Epic Rolls
+	--epic-rolls-app-bg: url(../../../systems/dnd5e/ui/texture1.webp) no-repeat top center / auto 770px,
+						 url(../../../systems/dnd5e/ui/texture2.webp) no-repeat bottom center / auto 704px;
+	--epic-rolls-banner-hue: 0deg;
+
+/* Paper Doll
+	--paper-doll-slot-width: 60px;
+	--paper-doll-flex-gap: 0.3rem;
+	--paper-doll-main-color: #191005;
+	--paper-doll-slot-hue-rotate: 0deg;
+
+/* Simple Quest
+    --simple-quest-background: #1b130deb;
+    --simple-quest-background-color: #1b130deb;
+    --simple-quest-hidden-color: #ff00ff;
+    --simple-quest-failed-color: #ff0000;
+    --simple-quest-font-size: 2rem;
+    --simple-quest-font-family: "Times New Roman";
+    --simple-quest-header-font-family: "Times New Roman";
+    --simple-quest-text-0: #f5deb3;
+    --simple-quest-text-1: #f5deb3;
+    --simple-quest-text-2: #f5deb3;
+    --simple-quest-text-3: #f5deb3;
+    --simple-quest-text-4: #f5deb3;
+    --simple-quest-notification-creature: #4bae55c4;
+    --simple-quest-notification-magic: #694baec4;
+    --simple-quest-notification-item: #ae4b4bc4;
+    --simple-quest-notification-event: #ae854bc4;
+    --simple-quest-notification-time: #4bae9fc4;
+    --simple-quest-notification-npc: #94ae4bc4;
+    --simple-quest-notification-location: #4b6aaec4;
+    --simple-quest-invert: 0;
+	--simple-quest-font-family: Signika;
+    --simple-quest-header-font-family: Courier New;
+    --simple-quest-background: #000000eb;
+    --simple-quest-background-color: #000000eb;
+    --simple-quest-hidden-color: #9900cc;
+    --simple-quest-failed-color: #cc0000;
+    --simple-quest-font-size: 1.5rem;
+    --simple-quest-invert: 0;
+    --simple-quest-text-0: #ffffff;
+    --simple-quest-text-1: #ffffff;
+    --simple-quest-text-2: #ffffff;
+    --simple-quest-text-3: #ffffff;
+    --simple-quest-text-4: #7f7f7f;
+
+/* Visual Active Effects
+    --vae-border-color-temporary: rgba(158, 192, 255, 0.705);
+    --vae-border-color-passive: rgba(255, 242, 167, 0.664);
+    --vae-border-color-disabled: rgba(194, 0, 0, 0.61);
+    --vae-dropshadow: drop-shadow(3px 3px 4px rgb(83, 83, 83));
+    --vae-backdrop-color: rgb(49, 49, 49);
+    --vae-button-color-font: rgba(255, 255, 255, 0.664);
+    --vae-button-color-backdrop: rgb(100, 100, 100);
+    --vae-name-color: rgb(255, 255, 255);
+    --vae-name-border: 1px dashed rgba(133, 133, 133, 0.582);
+    --vae-name-font: 'Amiri';
+    --vae-tag-border: 1px solid rgb(197, 197, 197);
+    --vae-tag-color-duration: rgba(100, 100, 255, 0.5);
+    --vae-tag-color-disabled: rgba(255, 100, 100, 0.5);
+    --vae-tag-color-source: rgba(255, 100, 255, 0.5);
+
+/* Token Action Hud
+	--tah-background-color: #00000000;
+	--tah-border-radius: 3px;
+	--tah-gap: 5px;
+	--tah-button-background-color: rgba(11, 10, 19, 0.9);
+	--tah-button-border-color: none;
+	--tah-button-box-shadow: 0 2px 0 -1px #0c0c0c, 0 0 0 1px #060606, 0 0 5px #000000ff;
+	--tah-button-disabled-text-color: var(--tah-text-secondary-color);
+	--tah-button-text-color: var(--tah-text-primary-color);
+	--tah-button-height: 32px;
+	--tah-button-min-width: 32px;
+	--tah-button-hover-box-shadow: 0 2px 0 -1px var(--tah-text-tertiary-color), 0 0 0 1px red, 0 0 10px var(--tah-text-tertiary-color);
+	--tah-button-hover-text-color: #fff;
+	--tah-button-active-background-color: rgba(60, 0, 120, 0.9);
+	--tah-button-active-box-shadow: 0 0 0 1px #9b8dff, inset 0 0 10px #9b8dff;
+	--tah-button-toggle-background-color: #000000b3;
+	--tah-button-toggle-hover-background-color: rgba(60, 0, 120, 0.9);
+	--tah-button-toggle-hover-box-shadow: 0 0 0 1px #9b8dff, 0 0 10px #9b8dff;
+	--tah-text-disabled-color: var(--tah-text-secondary-color);
+	--tah-text-primary-color: #efe6d8;
+	--tah-text-secondary-color: #d0b8a3;
+	--tah-text-tertiary-color: #ff6400;
+	--tah-text-hover-primary-color: var(--tah-text-primary-color);
+	--tah-text-hover-secondary-color: var(--tah-text-secondary-color);
+	--tah-text-hover-tertiary-color: var(--tah-text-tertiary-color);
+	--tah-text-shadow: 1px 1px 1px rgb(11, 10, 19), 1px 1px 1px rgb(11, 10, 19), 1px 1px 3px rgb(11, 10, 19), 1px 1px 5px rgb(11, 10, 19);
+
+/* Heretic's Guide
+	--color-hgdd-red: rgb(85, 26, 26);
+	--color-hgdd-red-hover: rgba(85, 26, 26, 0.2);
+	--color-hgdd-red-alpha: rgba(85, 26, 26, 0.08);
+	--color-hgdd-gold: rgb(193, 154, 89);
+	--color-hgdd-light-gold: rgb(238, 233, 222);
+	--color-hgdd-white: rgb(251, 250, 247);
+	--color-hgdd-brown: rgb(212, 201, 173);
+	--color-hgdd-light-brown: rgba(157, 123, 78, 0.3);
+
+/* Item Piles
+	--item-piles-inactive: rgba(31, 143, 255, 1);
+	--item-piles-minor-inactive: rgba(201, 200, 185, 1);
+	--item-piles-shadow-primary: rgba(255, 0, 0, 1);
+	--item-piles-even-color: rgba(240, 240, 223, 1);
+	--item-piles-odd-color: rgba(0, 0, 0, 0);
+	--item-piles-border-dark-primary: rgba(25, 24, 19, 1);
+	--item-piles-border-light-primary: rgba(181, 179, 164, 1);
+	--item-piles-text-light-highlight: rgba(240, 240, 224, 1);
+	--item-piles-text-important: rgba(255, 100, 0, 1);
+	--item-piles-app-background: rgb(220, 220, 207);
+	--item-piles-app-box-shadow: none;
+	--item-piles-app-color: #000;
+	--item-piles-app-border: none;
+	--item-piles-app-padding: 8px;
+	--item-piles-app-border-image: none;
+	--item-piles-app-header-flex: 0 0 30px;
+	--item-piles-app-header-background: rgb(24, 24, 24, 0.25);
+	--item-piles-app-header-color: var(--item-piles-text-light-highlight);
+	--item-piles-app-header-border: none;
+	--item-piles-app-header-padding: 0 8px;
+	--item-piles-app-header-border-image: none;
+	--item-piles-app-header-line-height: 30px;
+	--item-piles-app-header-border-bottom: 1px solid var(--item-piles-border-dark-primary);
+	--item-piles-app-header-title-border: none;
+	--item-piles-app-header-title-box-shadow: none;
+	--item-piles-app-header-title-font-size: 14px;
+	--item-piles-app-header-title-font-weight: 400;
+	--item-piles-app-header-button-color: var(--item-piles-border-light-primary);
+	--item-piles-app-header-close-button-color: rgb(255, 50, 0);
+	--item-piles-app-header-close-button-background: none;
+	--item-piles-input-text-color: #000;
+	--item-piles-input-background: rgba(0, 0, 0, 0.05);
+	--item-piles-input-border: 1px solid var(--color-border-light-tertiary);
+	--item-piles-input-border-radius: 3px;
+	--item-piles-input-padding: 0 3px;
+	--item-piles-input-text-overflow: ellipsis;
+	--item-piles-input-placeholder-color: #000;
+	--item-piles-button-border: 1px solid var(--item-piles-border-light-primary);
+	--item-piles-button-border-radius: 5px;
+	--item-piles-button-background-color: rgba(255, 255, 240, 0.8);
+	--item-piles-button-font-size: var(--font-size-14);
+	--item-piles-button-font-family: "Signika", sans-serif;
+	--item-piles-scrollbar-width: 6px;
+	--item-piles-scrollbar-height: 6px;
+	--item-piles-scrollbar-track-box-shadow: 0 0 1px #999 inset;
+	--item-piles-scrollbar-track-border-radius: 4px;
+	--item-piles-scrollbar-thumb-outline: none;
+	--item-piles-scrollbar-thumb-border-radius: 3px;
+	--item-piles-scrollbar-thumb-background: #782e22;
+	--item-piles-scrollbar-thumb-border: 1px solid var(--color-border-highlight);
+
+/* Milando's Magical Marvels
+	--color-runecarving: rgb(25, 34, 59);
+    --color-runecarving-hover: rgba(25, 34, 59, 0.5);
+    --color-runecarving-tablerow: rgba(25, 34, 59, 0.2);
+    --color-runecarving-underline: rgb(170, 186, 206);
+    --color-runecarving-info: rgb(204, 215, 227);
+    --color-hexcrafting: rgb(59, 0, 3);
+    --color-hexcrafting-hover: rgba(59, 0, 3, 0.5);
+    --color-hexcrafting-tablerow: rgba(59, 0, 3, 0.2);
+    --color-hexcrafting-underline: rgb(155, 46, 41);
+    --color-hexcrafting-info: rgb(215, 171, 169);
+    --color-spellwarping: rgb(76, 35, 107);
+    --color-spellwarping-hover: rgba(76, 35, 107, 0.5);
+    --color-spellwarping-tablerow: rgba(76, 35, 107, 0.2);
+    --color-spellwarping-underline: rgb(131, 201, 196);
+    --color-spellwarping-info: rgb(205, 234, 231);
+    --color-neutral: rgb(25, 59, 57);
+    --color-neutral-hover: rgba(25, 59, 57, 0.5);
+    --color-neutral-tablerow: rgba(25, 59, 57, 0.2);
+    --color-neutral-underline: rgb(72, 129, 131);
+    --color-neutral-info: rgb(172, 206, 199);
+
+/* TJS????
+    --tjs-checkerboard-background-dark: rgb(205, 205, 205);
+    --tjs-checkerboard-background-10: url(data:image/svg+xml;utf8,<svg preserveAspectRatio="none" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="5" height="5" fill="transparent" /><rect x="5" y="5" width="5" height="5" fill="transparent" /><rect x="5" y="0" width="5" height="5" fill="white" /><rect x="0" y="5" width="5" height="5" fill="white" /></svg>) 0 0 / 10px 10px, var(--tjs-checkerboard-background-dark, rgb(205, 205, 205));
+    --tjs-action-ripple-background: rgba(0, 0, 0, 0.35);
+    --tjs-icon-button-background-hover: rgba(0, 0, 0, 0.10);
+    --tjs-icon-button-background-selected: rgba(0, 0, 0, 0.20);
+    --tjs-input-background: rgba(0, 0, 0, 0.05);
+    --tjs-input-border: 1px solid var(--color-border-light-tertiary);
+    --tjs-input-border-radius: 3px;
+    --tjs-input-height: var(--form-field-height);
+    --tjs-input-min-width: 20px;
+    --tjs-input-padding: 1px 3px;
+    --tjs-input-width: calc(100% - 2px);
+    --_tjs-default-input-height: var(--form-field-height);
+    --tjs-input-border-color: var(--color-border-light-tertiary);
+    --tjs-default-popup-background: var(--color-text-dark-header, #23221d);
+    --tjs-default-popup-border: 1px solid var(--color-border-dark, #000);
+    --tjs-default-popup-box-shadow: 0 0 2px var(--color-shadow-dark, #000);
+    --tjs-default-popup-primary-color: var(--color-text-light-primary, #b5b3a4);
+    --tjs-default-popup-highlight-color: var(--color-text-light-highlight, #f0f0e0);
+    --tjs-default-popover-border: 1px solid var(--color-border-dark, #000);
+    --tjs-default-popover-box-shadow: 0 0 10px var(--color-shadow-dark, #000)
+	--tjs-default-text-shadow-focus-hover: 0 0 8px var(--color-shadow-primary);
+    --tjs-app-background: url(/ui/denim075.png);
+
+/* Better Roll Tables
+    --better-rolltables-icon-size: 32px;
+    --better-rolltables-modesto: "Modesto Condensed", "Palatino Linotype", serif;
+    --better-rolltables-signika: "Signika", sans-serif;
+    --better-rolltables-primary-font: rgba(0, 0, 0, 0.9);
+    --better-rolltables-background: #ece9df;
+    --better-rolltables-faintest-color: rgba(0, 0, 0, 0.05);
+    --better-rolltables-faint-color: rgba(0, 0, 0, 0.1);
+    --better-rolltables-light-color: rgba(0, 0, 0, 0.25);
+    --better-rolltables-primary-color: rgba(0, 0, 0, 0.9);
+    --better-rolltables-secondary-color: rgba(0, 0, 0, 0.65);
+    --better-rolltables-tertiary-color: rgba(0, 0, 0, 0.4);
+    --better-rolltables-primary-accent: #ff6400;
+    --better-rolltables-white: #ffffff;
+    --better-rolltables-faint-white: rgba(255, 255, 255, 0.2);
+    --better-rolltables-linked-accent: rgba(0, 255, 0, 0.75);
+    --better-rolltables-unlinked-accent: rgba(255, 0, 0, 0.75);
+    --better-rolltables-linked-light: rgba(0, 255, 0, 0.4);
+    --better-rolltables-unlinked-light: rgba(255, 0, 0, 0.4);
+    --better-rolltables-safe-accent: rgba(0, 150, 100, 0.6);
+    --better-rolltables-unsafe-accent: rgba(255, 0, 0, 0.6);
+    --better-rolltables-header-background: rgba(255, 255, 255, 0.2);
+    --better-rolltables-header-border: rgba(0, 0, 0, 0.25);
+    --better-rolltables-stat-font: #ece9df;
+    --better-rolltables-prepareable: #778899;
+    --better-rolltables-prepared: rgba(50, 205, 50, 0.3);
+    --better-rolltables-prepared-outline: #32cd32;
+    --better-rolltables-prepared-accent: #adff2f;
+    --better-rolltables-always-prepared: rgba(0, 0, 255, 0.15);
+    --better-rolltables-always-prepared-outline: #4169e1;
+    --better-rolltables-always-prepared-accent: #00bfff;
+    --better-rolltables-magic-accent: #ffff00;
+    --better-rolltables-faint-magic-accent: rgba(255, 255, 0, 0.6);
+    --better-rolltables-magic-outline: #afff2f;
+    --better-rolltables-attunement-required: #cd5c5c;
+    --better-rolltables-icon-background: #ece9df;
+    --better-rolltables-icon-shadow: rgba(0, 0, 0, 0.4);
+    --better-rolltables-icon-outline: rgba(0, 0, 0, 0.4);
+    --better-rolltables-icon-font: rgba(0, 0, 0, 0.4);
+    --better-rolltables-exhaustion-font: rgba(0, 0, 0, 0.4);
+    --better-rolltables-icon-hover: rgba(0, 0, 0, 0.9);
+    --better-rolltables-pc-border: 0px;
+    --better-rolltables-npc-border: 0px;
+    --better-rolltables-vehicle-border: 0px;
+    --better-rolltables-note-background: rgba(0, 0, 0, 0.9);
+    --better-rolltables-exhaustion-lvl1: #ffe600;
+    --better-rolltables-exhaustion-lvl2: #ff8200;
+    --better-rolltables-exhaustion-lvl3: #ff3200;
+    --better-rolltables-ability-accent: darkslategrey;
+    --better-rolltables-context-outline: rgba(0, 0, 0, 0.4);
+    --better-rolltables-context-shadow: rgba(0, 0, 0, 0.65);
+    --better-rolltables-check-default: url(../images/check-dark-unchecked.svg);
+    --better-rolltables-check-checked: url(../images/check-dark-checked.svg);
+    --better-rolltables-checkbox-font: rgba(0, 0, 0, 0.9);
+    --better-rolltables-checkbox-outline: #969696;
+    --better-rolltables-checkbox-unchecked: #d8d7d1;
+    --better-rolltables-checkbox-checked: rgba(0, 255, 0, 0.3);
+
+/* Quick Insert
+	--qiItemHoverColor: #d6d5ca1e;
+    --qiItemSelectedColor: #d6d5ca1e;
+    --qiItemSelectedHoverColor: #d6d5ca1e;
+    --qiActionColor: var(--color-text-light-highlight);
+    --qiActionBgEmphasis: #fff4;
+    --qiActionBgEmphasisStrong: #fff6;
+    --qiBackground: var(--color-cool-4);
+
+} */

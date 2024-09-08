@@ -1,31 +1,39 @@
-# Changelog
-
-All notable changes to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
 ## TODO
-* Try and get Sticky Folders working
-* Style the chat/button area of the sidebar
-* Style TidySheet
-* Vertically center the names on sidebar items
-* Style Compendium Banners
+* More styling of TidySheet
 * Style Simple Calendar
+* Look in to pulling colors from game settings
 
-## [Unreleased]
+## Unreleased
 
-
-## [0.0.2] -
-### Added
-
-#### Incorporated these modules
-* Colored Folder Contents
-
-## [0.0.1] - 2024-08-25
-
+## 0.0.2
+### Multiple Refactors of Everything
+### Main Them
+#### Added
+* Fully Incorporated/Replaced
+ * Alternative Pause Icon
+ * Remove Invitation Links
+#### Changed
+* Full refactor of CSS
+#### Removed
+* ModuleSupport.js
+Small module support, like midi and dae buttons are present in the main theme or one of the sub themes if more appropriate. More substantial modules like Tidy Sheet have full files.
+### Sidebar
+#### Added
+* Compendium Banners styled by type
+* Fully Incorporated
+ * Colored Folder Contents
+ * Sticky Folders
+#### Fixes
+* Names are properly vertically centered
+### Chat
+#### Added
+* Initial commit of separate chat file
+* Trinium Chat Buttons support
+### Tidy5e
+#### Added
+* Split Tidy themeing into its own dedicated file
+### Journal
+#### Added
+* Initial commit of separate journal file
+## 0.0.1 - 2024-08-25
 - Initial commit
-
-[unreleased]: https://github.com/sirgarhi/garhis-grotto-module/compare/v0.0.1...HEAD
-[0.0.2]: https://github.com/sirgarhi/garhis-grotto-module/releases/tag/v0.0.2
-[0.0.1]: https://github.com/sirgarhi/garhis-grotto-module/releases/tag/v0.0.1

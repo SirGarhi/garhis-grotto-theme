@@ -1,0 +1,48 @@
+/* Summary of Changes
+ *
+ *
+ *
+ *
+*/
+/*
+   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+   *  *  *  *  *  *  *  *  *  *  JOURNAL THEME  *  *  *  *  *  *  *  *  *  *  *  *  *
+   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+*/
+/* Editor */
+/* body.garhis-grotto.theme .editor
+body.garhis-grotto.theme .markdown-editor {
+	background: var(--gg-theme-primary-color-background-primary-4);
+	color: var(--gg-theme-primary-color-text-primary-4);
+	border-top: var(--gg-theme-primary-color-border-primary-4);
+}
+
+body.garhis-grotto.theme .journal-sidebar .journal-header .title {
+	font-size: var(--font-size-16);
+	height: 32px;
+	color: var(--color-text-dark-1);
+	background: var(--dnd5e-color-parchment);
+	font-weight: 700;
+}
+
+body.garhis-grotto.theme .journal-entry .journal-sidebar .action-buttons .add-page-buttons button {
+	box-shadow: var(--gold-and-glow);
+}
+
+body.garhis-grotto.theme .journal-entry .journal-sidebar .action-buttons .add-page-buttons button i {
+	font-size: 20px;
+}
+
+/* body.garhis-grotto.theme .sheet.journal-entry-page .journal-header {
+	background: var(--gg-theme-primary-color-background-primary-2);
+	color: var(--gg-theme-primary-color-text-heading);
+	border-bottom: var(--gg-theme-primary-color-border-primary-2);
+}
+
+body.garhis-grotto.theme article header input {
+	font-family: var(--font-primary);
+	font-size: var(--font-size-28);
+	height: var(--font-size-34);
+}*/
