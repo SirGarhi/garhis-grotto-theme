@@ -4,31 +4,17 @@
  *
  *
 */
-body.garhis-grotto.theme #ui-right>#sidebar,
-body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
-
-    /*
-     *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-     *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-     *  *  *  *  *  *  *  *  *  *  SIDEBAR THEME  *  *  *  *  *  *  *  *  *  *  *  *  *
-     *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-     *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-  */
+body.garhis-grotto-theme #ui-right>#sidebar {
 
    /*
       *  *  *  *  *  *  *  *  *  *
       *  *  SHARED ELEMENTS   *  *
       *  *  *  *  *  *  *  *  *  *
    */
-   --gg-theme-sidebar-background-color-gradient-1: var(--gg-theme-main-background-color-gradient-1);
-   --gg-theme-sidebar-background-color-gradient-2: var(--gg-theme-main-background-color-gradient-2);
-   --gg-theme-sidebar-background-color-gradient-3: var(--gg-theme-main-background-color-gradient-3);
-   --gg-theme-sidebar-background-color-gradient-4: var(--gg-theme-main-background-color-gradient-4);
-   --gg-theme-sidebar-background-texture: var(--gg-theme-main-background-texture-parchment);
 
    --gg-theme-sidebar-shadow-color-dark: hsl(265, 100%, 15%);
    --gg-theme-sidebar-shadow-color-base: hsl(180, 100%, 50%);
-   --gg-theme-sidebar-shadow-color-highlight: hsl(285, 80%, 25%);
+   --gg-theme-sidebar-shadow-color-highlight: hsl(285, 80%, 45%);
    --gg-theme-sidebar-shadow-color-active: hsl(290, 100%, 75%);
 
    /*
@@ -36,13 +22,6 @@ body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
       *  *  * Sidebar Window  *  *  *
       *  *  *  *  *  *  *  *  *  *  *
    */
-   --gg-theme-sidebar-background-color-gradient-sidebar:
-      linear-gradient(to bottom,
-         var(--gg-theme-sidebar-background-color-gradient-1),
-         var(--gg-theme-sidebar-background-color-gradient-2),
-         var(--gg-theme-sidebar-background-color-gradient-3),
-         var(--gg-theme-sidebar-background-color-gradient-4)),
-      var(--gg-theme-sidebar-background-texture) repeat;
    --gg-theme-sidebar-border-color-sidebar-separator: hsl(50, 100%, 50%);
 
    /*
@@ -50,9 +29,8 @@ body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
       *  *  *  NAV HEADER  *  *  *
       *  *  *  *  *  *  *  *  *  *
    */
-   --gg-theme-sidebar-background-color-nav-header: hsla(265, 100%, 30%, 60%);
-   --gg-theme-sidebar-border-color-nav-header: hsl(300, 100%, 20%);
-   --gg-theme-sidebar-nav-header-size-height: 30px;
+   --gg-theme-sidebar-background-color-nav-header: hsla(265, 100%, 20%, 60%);
+   --gg-theme-sidebar-border-color-nav-header: hsl(50, 100%, 50%);
 
    /*
       *  *  *  *  *  *  *  *  *  *
@@ -62,21 +40,20 @@ body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
       /*
          *  *  * BASE *  *  *
       */
-   --gg-theme-sidebar-background-size-tab-button-width: 24px;
    --gg-theme-sidebar-background-color-tab-button: hsl(255, 80%, 20%);
    --gg-theme-sidebar-border-color-tab-button: hsl(50, 90%, 40%);
    --gg-theme-sidebar-text-color-tab-button: hsl(44, 75%, 68%);
       /*
          *  *  * HOVER *  *  *
       */
-   --gg-theme-sidebar-background-color-tab-button-hover: hsla(50, 100%, 50%, 30%);
-   --gg-theme-sidebar-border-color-tab-button-hover: hsl(285, 80%, 20%);
-   --gg-theme-sidebar-text-color-tab-button-hover: hsl(275, 80%, 40%);
+   --gg-theme-sidebar-background-color-tab-button-hover: hsl(50, 100%, 50%);
+   --gg-theme-sidebar-border-color-tab-button-hover: hsl(270, 100%, 50%);
+   --gg-theme-sidebar-text-color-tab-button-hover: hsl(265, 80%, 30%);
       /*
          *  *  * ACTIVE *  *  *
       */
-   --gg-theme-sidebar-background-color-tab-button-active: hsl(270, 80%, 25%);
-   --gg-theme-sidebar-border-color-tab-button-active: hsl(45, 80%, 50%);
+   --gg-theme-sidebar-background-color-tab-button-active: hsl(270, 80%, 30%);
+   --gg-theme-sidebar-border-color-tab-button-active: hsl(300, 80%, 80%);
    --gg-theme-sidebar-text-color-tab-button-active: hsl(45, 75%, 60%);
       /*
          *  *  * COLLAPSE *  *  *
@@ -119,12 +96,10 @@ body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
       */
    --gg-theme-sidebar-background-color-diretory-header: hsla(265, 100%, 30%, 60%);
    --gg-theme-sidebar-border-color-diretory-header: hsl(300, 100%, 20%);
-   --gg-theme-sidebar-diretory-header-size-height: 30px;
       /*
          *  *  * ITEM *  *  *
       */
    --gg-theme-sidebar-border-color-item: hsl(25, 100%, 50%);
-   --gg-theme-sidebar-item-size-height: 30px;
    /*
       *  *  *  *  *  *  *  *  *  *
       *  *  *  COMPENDIUM  *  *  *
@@ -200,14 +175,8 @@ body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
    *  *  *  * MAIN SIDEBAR *  *  *  *
    *  *  *  *  *  *  *  *  *  *  *  *
 */
-   border-top: 3px groove var(--gg-theme-sidebar-border-color-nav-header);
-   background: var(--gg-theme-sidebar-background-color-gradient-sidebar);
    border: none;
    border-left: 3px ridge var(--gg-theme-sidebar-border-color-sidebar-separator);
-   box-sizing: border-box;
-   max-height: 100%;
-   max-width: 400px;
-   width: max-content;
 
 /*
    *  *  *  *  *  *  *  *  *  *  *  *
@@ -216,62 +185,35 @@ body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
 */
 	& #sidebar-tabs {
       background: var(--gg-theme-sidebar-background-color-nav-header);
-      border-bottom: 3px groove var(--gg-theme-sidebar-border-color-nav-header);
+      border-bottom: 2px solid var(--gg-theme-sidebar-border-color-nav-header);
       box-shadow: none;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      line-height: 36px;
-      box-sizing: border-box;
-      margin:0;
-      height: var(--gg-theme-sidebar-nav-header-size-height);
-      width: max-content;
-      /* padding: 3px; */
 
       &>a {
          &:hover,
          &.notification-pip {
             background-color: var(--gg-theme-sidebar-background-color-tab-button-hover);
-            border-color: var(--gg-theme-sidebar-border-color-tab-button-hover);
+            border: 4px solid var(--gg-theme-sidebar-border-color-tab-button-hover);
             color: var(--gg-theme-sidebar-text-color-tab-button-hover);
-            box-shadow: 0 0 2px var(--gg-theme-sidebar-shadow-color-highlight);
+            box-shadow: inset 0 0 6px var(--gg-theme-sidebar-shadow-color-highlight);
          }
       }
-      &>.item {
+      &>.item,
+      &>.collapse {
          background: var(--gg-theme-sidebar-background-color-tab-button);
          border: 2px solid var(--gg-theme-sidebar-border-color-tab-button);
          color: var(--gg-theme-sidebar-text-color-tab-button);
-         border-radius: 8px 8px 0 0;
-         box-sizing: border-box;
-         width: var(--gg-theme-sidebar-background-size-tab-button-width);
-         height: var(--gg-theme-sidebar-background-size-tab-button-width);
-         display: flex;
-         align-items: center;
-         justify-content: center;
+         border-radius: 8px;
          &.active {
-            background-color: var(--gg-theme-sidebar-background-color-tab-button);
+            background-color: var(--gg-theme-sidebar-background-color-tab-button-active);
             border-color: var(--gg-theme-sidebar-border-color-tab-button-active);
             color: var(--gg-theme-sidebar-text-color-tab-button-active);
-            box-shadow: 0 0 3px var(--gg-theme-sidebar-shadow-color-active);
-            text-shadow: 0 0 3px var(--gg-theme-sidebar-shadow-color-active);
+            box-shadow: none;
+            text-shadow: none;
          }
       }
       &>.collapse {
-         background: var(--gg-theme-sidebar-background-color-tab-button-collapse);
-         border: 1px solid var(--gg-theme-sidebar-border-color-tab-button-collapse);
          color: var(--gg-theme-sidebar-text-color-tab-button);
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         width: calc(var(--gg-theme-sidebar-background-size-tab-button-width)/2);
-         height: var(--gg-theme-sidebar-background-size-tab-button-width);
-         border-radius: 0;
-         &:active {
-            background-color: var(--gg-theme-sidebar-background-color-tab-button);
-            border-color: var(--gg-theme-sidebar-border-color-tab-button-active);
-            color: var(--gg-theme-sidebar-text-color-tab-button-active);
-            box-shadow: 0 0 2px var(--gg-theme-sidebar-shadow-color-active);
-         }
+         border-radius: 4px;
       }
    }
    /*
@@ -281,19 +223,12 @@ body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
    */
    & > .directory {
       & .directory-header {
-         display: flex;
-         flex: none;
-         flex-flow: column nowrap;
-         align-items: center;
-         justify-content: space-around;
-         line-height: var(--gg-theme-sidebar-directory-header-size-height);
          background: var(--gg-theme-sidebar-background-color-directory-header);
          border-bottom: 3px groove var(--gg-theme-sidebar-border-directory-nav-header);
       }
       & .directory-list {
          & .directory-item {
             border-top: 1px solid var(--gg-theme-sidebar-border-color-item);
-            line-height: var(--gg-theme-sidebar-item-size-height);
             &:last-child {
                border-bottom: 1px solid var(--gg-theme-sidebar-border-color-item);
             }
@@ -303,8 +238,6 @@ body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
                *  *  *  *  *  *  *  *  *  *  *
             */
             &.folder {
-               padding: 1px 1px 1px 5px;
-               margin: 1px;
                border: none;
                border-left: 1px solid var(--gg-theme-sidebar-border-color-folder-sides);
                border-right: 1px solid var(--gg-theme-sidebar-border-color-folder-sides);
@@ -358,15 +291,9 @@ body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
                }
                & .folder-header {
                   background-color: inherit;
-                  position: sticky;
                }
                & .subdirectory {
                   border: 1px solid var(--gg-theme-sidebar-border-color-folder-sub);
-               }
-               &.collaped {
-                  & .folder-header {
-                     position: relative;
-                  }
                }
             }
             /*
@@ -376,17 +303,8 @@ body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
             */
             &.compendium {
                & .compendium-name {
-                  width: max-content;
-                  max-width: 80%;
-                  padding: 3px 12px;
-                  margin: 0;
-                  text-align: left;
-                  display: flex;
-                  flex: 0 1 auto;
-                  word-break: keep-all;
                   background: var(--gg-theme-sidebar-background-color-compendium-name);
                   color: var(--gg-theme-sidebar-text-color-compendium-name);
-                  justify-items: space-between;
                }
                & .compendium-footer .source {
                   background: var(--gg-theme-sidebar-background-color-compendium-source);
@@ -424,18 +342,6 @@ body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
             border: 2px double var(--gg-theme-sidebar-border-color-nav-header);
          }
       }
-      &  .folder-header>#context-menu,
-      &  .directory-item #context-menu,
-      &  .window-app #context-menu {
-         --context-menu-z-index: 100000;
-         --adjusted-context-spacing: calc(100% + 1px);
-         z-index: var(--context-menu-z-index);
-
-         &.expand-up,
-         &.expand-down {
-            top: var(--adjusted-context-spacing);
-         }
-      }
    }
    /*
       *  *  *  *  *  *  *  *  *  *  *  *
@@ -446,13 +352,13 @@ body.garhis-grotto.theme.dark-mode #ui-right>#sidebar {
       background: var(--gg-theme-sidebar-background-color-button);
       border: 1px solid var(--gg-theme-sidebar-border-color-button);
       color: var(--gg-theme-sidebar-text-color-button);
-      &:hover {
+      &.hover {
          background-color: var(--gg-theme-sidebar-background-color-button-hover);
          border-color: var(--gg-theme-sidebar-border-color-button-hover);
          color: var(--gg-theme-sidebar-text-color-tab-button-hover);
          box-shadow: 0 0 6px inset var(--gg-theme-sidebar-shadow-color-highlight);
       }
-      &:active {
+      &.active {
          background-color: var(--gg-theme-sidebar-background-color-button);
          border-color: var(--gg-theme-sidebar-border-color-button-active);
          color: var(--gg-theme-sidebar-text-color-button-active);

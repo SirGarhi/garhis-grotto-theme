@@ -1,73 +1,89 @@
 {
-	"id": "garhis-grotto-theme",
-	"title": "Garhi's Grotto: Comprehensive Theme",
-	"description": "A comprehensive UI Theme with a high degree of customizability.",
-	"version": "0.1.0",
-	"compatibility": {
-		"minimum": "12",
-		"verified": "12"
-	},
-	"authors": [ {	"name": "Garhi",
-			"email": "garhi@garhisgrotto.com",
-			"url": "http://www.garhisgrotto.com",
-			"discord": "garhi",
-			"flags": {}
+  "id": "garhis-grotto-theme",
+  "title": "Garhi's Grotto: UI-Theme",
+  "description": "A comprehensive UI Theme with a high degree of customizability.",
+  "version": "0.1.0",
+  "compatibility": {
+	"minimum": "12",
+	"verified": "12",
+	"maximum": "12.999"
+  },
+  "authors": [
+	{
+	  "name": "Garhi",
+	  "email": "garhi@garhisgrotto.com",
+	  "url": "http://www.garhisgrotto.com",
+	  "discord": "garhi",
+	  "flags": {}
+	}
+  ],
+  "esmodules": [
+	"/scripts/gg-theme.mjs"
+  ],
+  "styles": [
+	"css/gg-theme-main.css",
+	"css/gg-theme-sidebar.css",
+	"css/gg-theme-chat.css",
+	"css/gg-theme-journal.css",
+	"css/gg-theme-tidysheet.css"
+  ],
+  "languages": [
+	{
+	  "lang": "en",
+	  "name": "English",
+	  "path": "lang/en.json",
+	  "flags": {}
+	}
+  ],
+  "relationships": {
+	"recommends": [
+	  {
+		"id": "garhis-grotto-core",
+		"type": "module",
+		"compatibility": {}
+	  }
+	],
+	"systems": [
+	  {
+		"id": "dnd5e",
+		"type": "system",
+		"compatibility": {
+		  "minimum": "3.0.0",
+		  "verified": "3.3.1",
+		  "maximum": "3.9.9"
 		}
+	  }
 	],
-	"esmodules": [
-		"/scripts/gg-theme-init.js"
-	],
-	"styles": [
-		"/css/gg-theme-main.css",
-      "/css/gg-theme-sidebar.css",
-      "/css/gg-theme-chat.css",
-		"/css/gg-theme-journal.css",
-		"/css/gg-theme-tidysheet.css"
-	],
-	"languages": [
-		{	"lang": "en",
-			"name": "English",
-			"path": "lang/en.json",
-			"flags": {}
+	"requires": [
+		{
+			"id": "garhis-grotto-resources",
+			"type": "module",
+			"compatibility": {}
 		}
-	],
-	"relationships":{
-		"recommends": [
-			{	"id": "garhis-grotto-core",
-				"type": "module",
-				"compatibility": {}
-			}
-		],
-		"systems": [
-			{	"id": "dnd5e",
-				"type": "system",
-				"compatibility": {
-					"minimum": "3.0.0",
-					"verified": "3.3.1",
-					"maximum": "3.9.9"
-				}
-			}
-		],
-		"requires": []
-	},
-	"flags": {
-		"allowBugReporter": true,
-		"hotReload": {
-         "extensions": ["css", "html", "hbs", "json", "js"],
-         "paths": ["css", "scripts", "templates", "lang/en.json"]
-		}
-	},
-	"media": [
-		{	"type": "setup",
-			"url": "modules/garhis-grotto-theme/assets/art/branding/garhis-grotto-logo.webp",
-			"loop": false,
-			"flags": {}
-		}
-	],
-	"url": "https://www.garhisgrotto.com/",
-	"readme": "https://github.com/SirGarhi/garhis-grotto-theme/theme/prime/README.md",
-	"changelog": "https://github.com/SirGarhi/garhis-grotto-module/blob/prime/CHANGELOG.md",
-	"bugs": "https://github.com/SirGarhi/garhis-grotto-theme/issues",
-	"manifest": "",
-	"download": ""
+	]
+  },
+  "flags": {
+	"allowBugReporter": true,
+	"hotReload": {
+	  "extensions": [
+		"css", "html", "hbs", "json", "js"
+	  ],
+	  "paths": [
+		"css", "scripts", "templates", "lang/en.json"
+	  ]
+	}
+  },
+  "media": [
+	{
+	  "type": "setup",
+	  "url": "modules/garhis-grotto-resources/assets/art/branding/garhis-grotto-logo.webp",
+	  "loop": false,
+	  "flags": {}
+	}
+  ],
+  "url": "https://www.garhisgrotto.com/",
+  "readme": "https://github.com/SirGarhi/garhis-grotto-theme/theme/prime/README.md",
+  "changelog": "https://github.com/SirGarhi/garhis-grotto-module/blob/prime/CHANGELOG.md",
+  "bugs": "https://github.com/SirGarhi/garhis-grotto-theme/issues",
+  "manifest": ""
 }

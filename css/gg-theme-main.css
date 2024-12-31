@@ -1,26 +1,26 @@
 /*
-   * Summary of Changes
-      * Background, Border, and Text color definitions for every wlement
-      * Hover, Active, and Focus sub-definitions where relevent
-      * Distinct settings for Window, Window-Content, Window-Aside, and Window-Tooltip
-      * Font, Size, Color settings for Text Tags as well as explicitly for many elements
-      * Alternate theme for Window, Button, and Text Tags
-      * Module support for
-         - Action Pack
-         - Ripper's Taskbar
+	* Summary of Changes
+		* Background, Border, and Text color definitions for every wlement
+		* Hover, Active, and Focus sub-definitions where relevent
+		* Distinct settings for Window, Window-Content, Window-Aside, and Window-Tooltip
+		* Font, Size, Color settings for Text Tags as well as explicitly for many elements
+		* Alternate theme for Window, Button, and Text Tags
+		* Module support for
+			- Action Pack
+			- Ripper's Taskbar
 
-      * Subsettings for right-hand Sidebar (see gg-theme-sidebar.css)
-         * Module support for
-            - Ripper's File-Picker
-            - Chris Premades Macro and Effect directories
+		* Subsettings for right-hand Sidebar (see gg-theme-sidebar.css)
+			* Module support for
+				- Ripper's File-Picker
+				- Chris Premades Macro and Effect directories
 
-      * Subsettings for Chatlog (see gg-theme-chat.css)
-         * Module support for
-            - Support for Trinium Chat Buttons
-            - Support for Polyglot
+		* Subsettings for Chatlog (see gg-theme-chat.css)
+			* Module support for
+				- Support for Trinium Chat Buttons
+				- Support for Polyglot
 
-      * Subsettings for Journal (see gg-theme-journal.css)
-      * Subsettings for TidySheet5e (see gg-theme-tidysheet.css)
+		* Subsettings for Journal (see gg-theme-journal.css)
+		* Subsettings for TidySheet5e (see gg-theme-tidysheet.css)
 */
 @font-face {
 	font-family: "JetBrains Mono Regular";
@@ -30,939 +30,840 @@
 	font-display: swap;
 }
 
-body.game.garhis-grotto.theme,
-body.game.garhis-grotto.theme.dark-mode {
+body.game.garhis-grotto-theme {
 /*
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  MAIN THEME  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  MAIN THEME  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 */
-      /*
-         *  *  *  *  *  *  *  *  *  *
-         *  *  SHARED ELEMENTS   *  *
-         *  *  *  *  *  *  *  *  *  *
-      */
-      --gg-theme-main-shadow-color-base: hsl(25, 100%, 50%);
-      --gg-theme-main-shadow-color-highlight: hsl(285, 80%, 25%);
-      --gg-theme-main-shadow-color-active: hsl(290, 100%, 75%);
+		/*
+			*  *  *  *  *  *  *  *  *  *
+			*  *  SHARED ELEMENTS   *  *
+			*  *  *  *  *  *  *  *  *  *
+		*/
+		--gg-theme-main-shadow-color-base: hsl(25, 100%, 50%);
+		--gg-theme-main-shadow-color-highlight: hsl(285, 80%, 25%);
+		--gg-theme-main-shadow-color-active: hsl(290, 100%, 75%);
+		--gg-theme-alternate-shadow-color-base: hsl(175, 100%, 50%);
+		--gg-theme-alternate-shadow-color-highlight: hsl(220, 100%, 50%);
+		--gg-theme-alternate-shadow-color-active: hsl(175, 100%, 50%);
 
-      --gg-theme-main-text-color-link: hsl(290, 100%, 75%);
-      --gg-theme-main-text-color-selection: hsl(50, 48%, 90%);
-      --gg-theme-main-background-color-selection: hsl(260, 43%, 1%);
+		--gg-theme-main-text-color-link: hsl(290, 100%, 75%);
+		--gg-theme-main-text-color-selection: hsl(50, 48%, 90%);
+		--gg-theme-main-background-color-selection: hsl(260, 43%, 1%);
+		--gg-theme-alternate-text-color-link: hsl(290, 100%, 75%);
+		--gg-theme-alternate-text-color-selection: hsl(50, 48%, 90%);
+		--gg-theme-alternate-background-color-selection: hsl(265, 100%, 30%);
 
-      --gg-theme-main-color-scrollbar: hsla(25, 100%, 50%, 60%);
+		--gg-theme-main-color-scrollbar: hsla(25, 100%, 50%, 60%);
 
-      --gg-theme-main-background-texture-parchment:
-        url('../assets/art/textures/gg-theme-main-texture-parchment.webp');
-      --gg-theme-main-background-texture-overlay-top-right:
-        url("../assets/art/textures/gg-theme-main-texture-overlay-top-right.webp");
-      --gg-theme-main-background-texture-overlay-bottom-left:
-        url("../assets/art/textures/gg-theme-main-texture-overlay-bottom-left.webp");
+		--gg-theme-main-background-texture-parchment:
+		  url('../assets/art/textures/gg-theme-main-texture-parchment.webp');
+		--gg-theme-alternate-background-texture-parchment:
+		  url('../assets/art/textures/gg-theme-alternate-texture-parchment.webp');
 
-      --gg-theme-main-background-color-gradient-1: hsla(255, 99%, 20%, 50%);
-      --gg-theme-main-background-color-gradient-2: hsla(271, 78%, 34%, 50%);
-      --gg-theme-main-background-color-gradient-3: hsla(295, 74%, 26%, 50%);
-      --gg-theme-main-background-color-gradient-4: hsla(310, 86%, 32%, 50%);
+		--gg-theme-main-background-texture-overlay-top-right:
+		  url("../assets/art/textures/gg-theme-main-texture-overlay-top-right.webp");
+		--gg-theme-main-background-texture-overlay-bottom-left:
+		  url("../assets/art/textures/gg-theme-main-texture-overlay-bottom-left.webp");
 
-      /*
-         *  *  *  *  *  *  *  *  *  *
-         *  *  * WINDOW | APP *  *  *
-         *  *  *  *  *  *  *  *  *  *
-      */
-         /*
-            *  *  * BASE *  *  *
-         */
-      --gg-theme-main-background-color-gradient-window:
-         linear-gradient(to bottom right,
-            var(--gg-theme-main-background-color-gradient-1),
-            var(--gg-theme-main-background-color-gradient-2),
-            var(--gg-theme-main-background-color-gradient-3),
-            var(--gg-theme-main-background-color-gradient-4)),
-         var(--gg-theme-main-background-texture-parchment) top left repeat;
+		--gg-theme-main-background-color-gradient-1: hsla(250, 100%, 20%, 20%);
+		--gg-theme-main-background-color-gradient-2: hsla(260, 100%, 20%, 20%);
+		--gg-theme-main-background-color-gradient-3: hsla(295, 100%, 20%, 20%);
+		--gg-theme-main-background-color-gradient-4: hsla(310, 100%, 20%, 20%);
 
-     --gg-theme-main-border-color-window: hsl(50, 100%, 50%);
-     --gg-theme-main-text-color-window: hsl(60, 38%, 87%);
-     --gg-theme-main-text-color-window-alt: hsl(22, 11%, 85%);
-     --gg-theme-main-text-size-window: var(--gg-theme-main-text-size-body);
+		--gg-theme-alternate-background-color-gradient-1: hsla(310, 86%, 32%, 25%);
+		--gg-theme-alternate-background-color-gradient-2: hsla(295, 74%, 26%, 25%);
+		--gg-theme-alternate-background-color-gradient-3: hsla(271, 78%, 34%, 25%);
+		--gg-theme-alternate-background-color-gradient-4: hsla(255, 99%, 20%, 25%);
 
-     --gg-theme-main-background-size-window-height: 80%;
-     --gg-theme-main-background-size-window-width: calc(100hw * 0.4);
+		--gg-theme-main-pause-color-border: hsla(250, 100%, 40%, 40%);
 
-         /*
-            *  *  * HEADER *  *  *
-         */
-      --gg-theme-main-background-overlay-color-window-header: hsla(265, 80%, 30%, 50%);
-      --gg-theme-main-background-size-window-header-height: 1.5rem;
-      --gg-theme-main-border-color-window-header: hsl(50, 100%, 50%);
-      --gg-theme-main-text-color-window-header: hsl(50, 100%, 50%);
-      --gg-theme-main-text-size-window-header: 1.125rem;
-      --gg-theme-main-text-size-window-header-title: 1.25rem;
-      --gg-theme-main-text-font-window-header-title: 'EB Garamond', serif;
+		/*
+			*  *  *  *  *  *  *  *  *  *
+			*  *  * WINDOW | APP *  *  *
+			*  *  *  *  *  *  *  *  *  *
+		*/
 
+			/*
+				*  *  * BASE *  *  *
+			*/
+		--gg-theme-main-border-color-window: hsl(50, 100%, 50%);
+		--gg-theme-main-text-color-window: hsl(60, 38%, 87%);
+		--gg-theme-main-text-color-window-alt: hsl(22, 11%, 85%);
+		--gg-theme-alternate-border-color-window: hsl(50, 100%, 50%);
+		--gg-theme-alternate-text-color-window: hsl(60, 38%, 87%);
+		--gg-theme-alternate-text-color-window-alt: hsl(22, 11%, 85%);
 
-         /*
-            *  *  * CONTENT *  *  *
-         */
-      --gg-theme-main-background-overlay-color-window-content: hsla(250, 100%, 50%, 5%);
-      --gg-theme-main-text-color-window-content: var(--gg-theme-main-text-color-window-1);
+			/*
+				*  *  * HEADER *  *  *
+			*/
+		--gg-theme-main-background-overlay-color-window-header: hsla(250, 65%, 20%, 75%);
+		--gg-theme-main-border-color-window-header: hsl(50, 100%, 50%);
+		--gg-theme-main-text-color-window-header: hsl(50, 100%, 50%);
+		--gg-theme-main-text-font-window-header: 'EB Garamond', serif;
+		--gg-theme-alternate-background-overlay-color-window-header: hsla(265, 100%, 30%, 0.251);
+		--gg-theme-alternate-border-color-window-header: hsl(310, 80%, 70%);
+		--gg-theme-alternate-text-color-window-header: hsl(50, 100%, 40%);
+		--gg-theme-alternate-text-font-window-header: 'EB Garamond', serif;
 
-         /*
-            *  *  *   Aside   *  *  *  *
-         */
-      --gg-theme-main-background-overlay-color-window-aside: hsla(50, 100%, 50%, 5%);
-      --gg-theme-main-border-color-window-aside: hsl(50, 100%, 50%);
-      --gg-theme-main-text-color-window-aside: hsl(60, 38%, 87%);
-      --gg-theme-main-text-size-window-aside: var(--gg-theme-main-text-size-body-big);
+			/*
+				*  *  * CONTENT *  *  *
+			*/
+		--gg-theme-main-background-overlay-color-window-content: hsla(250, 100%, 50%, 5%);
+		--gg-theme-main-text-color-window-content: var(--gg-theme-main-text-color-window-1);
 
-         /*
-            *  *  *  Tooltip  *  *  *  *
-         */
-      --gg-theme-main-background-color-gradient-window-tooltip:
-         linear-gradient(to right,
-            var(--gg-theme-main-background-color-gradient-1),
-            var(--gg-theme-main-background-color-gradient-2),
-            var(--gg-theme-main-background-color-gradient-3),
-            var(--gg-theme-main-background-color-gradient-4)),
-         var(--gg-theme-main-background-texture-overlay-top-right) top right no-repeat,
-         var(--gg-theme-main-background-texture-overlay-bottom-left) bottom left no-repeat;
-      --gg-theme-main-border-color-window-tooltip: hsl(50, 100%, 50%);
-      --gg-theme-main-text-color-window-tooltip: hsl(50, 100%, 40%);
-      --gg-theme-main-text-size-window-tooltip: var(--gg-theme-main-text-size-body-tiny );
-      /*
-         *  *  *  *  *  *  *  *  *  *
-         *  *  *  * BUTTON *  *  *  *
-         *  *  *  *  *  *  *  *  *  *
-      */
-         /*
-            *  *  * BASE *  *  *
-         */
-      --gg-theme-main-text-font-button: 'Inknut Antiqua', serif;
-      --gg-theme-main-background-color-button: hsl(255, 100%, 20%);
-      --gg-theme-main-border-color-button: hsl(50, 100%, 40%);
-      --gg-theme-main-text-color-button: hsl(50, 58%, 77%);
-         /*
-            *  *  * HOVER *  *  *
-         */
-      --gg-theme-main-background-color-button-hover: hsl(255, 100%, 20%);
-      --gg-theme-main-border-color-button-hover: hsl(310, 100%, 50%);
-      --gg-theme-main-text-color-button-hover: hsl(30, 100%, 50%);
-         /*
-            *  *  * ACTIVE *  *  *
-         */
-      --gg-theme-main-background-color-button-active: hsl(285, 80%, 20%);
-      --gg-theme-main-border-color-button-active: hsl(290, 58%, 77%);
-      --gg-theme-main-text-color-button-active: hsl(50, 48%, 90%);
+			/*
+				*  *  *   Aside   *  *  *  *
+			*/
+		--gg-theme-main-background-overlay-color-window-aside: hsla(50, 100%, 50%, 5%);
+		--gg-theme-main-border-color-window-aside: hsl(50, 100%, 50%);
+		--gg-theme-main-text-color-window-aside: hsl(60, 38%, 87%);
 
-      /*
-         *  *  *  *  *  *  *  *  *  *  *
-         *  *  *  INLINE BUTTON  *  *  *
-         *  *  *  *  *  *  *  *  *  *  *
-      */
-         /*
-            *  *  * BASE *  *  *
-         */
-      --gg-theme-main-text-font-inline-button: 'Inknut Antiqua', serif;
-      --gg-theme-main-background-color-inline-button: hsla(241, 70%, 69%, 0.749);
-      --gg-theme-main-border-color-inline-button: hsl(259, 100%, 15%);
-      --gg-theme-main-text-color-inline-button: hsl(240, 10%, 15%);
-         /*
-            *  *  * HOVER *  *  *
-         */
-      --gg-theme-main-background-color-inline-button-hover: hsl(43, 17%, 76%);
-      --gg-theme-main-border-color-inline-button-hover: hsl(260, 70%, 25%);
-      --gg-theme-main-text-color-inline-button-hover: hsl(240, 10%, 15%);
-         /*
-            *  *  * ACTIVE *  *  *
-         */
-      --gg-theme-main-background-color-inline-button-active: hsl(285, 80%, 20%);
-      --gg-theme-main-border-color-inline-button-active: hsl(310, 100%, 50%);
-      --gg-theme-main-text-color-inline-button-active: hsl(45, 33%, 93%);
+			/*
+				*  *  *  Tooltip  *  *  *  *
+			*/
+		--gg-theme-main-border-color-window-tooltip: hsl(50, 100%, 50%);
+		--gg-theme-main-text-color-window-tooltip: hsl(50, 100%, 40%);
+		/*
+			*  *  *  *  *  *  *  *  *  *
+			*  *  *  * BUTTON *  *  *  *
+			*  *  *  *  *  *  *  *  *  *
+		*/
+			/*
+				*  *  * BASE *  *  *
+			*/
+		--gg-theme-main-text-font-button: 'Inknut Antiqua', serif;
+		--gg-theme-main-background-color-button: hsl(255, 100%, 20%);
+		--gg-theme-main-border-color-button: hsl(50, 100%, 40%);
+		--gg-theme-main-text-color-button: hsl(50, 60%, 75%);
+		--gg-theme-alternate-text-font-button: 'Alice', serif;
+		--gg-theme-alternate-background-color-button: hsl(265, 80%, 20%);
+		--gg-theme-alternate-border-color-button: hsl(50, 100%, 60%);
+		--gg-theme-alternate-text-color-button: hsl(50, 80%, 60%);
+			/*
+				*  *  * HOVER *  *  *
+			*/
+		--gg-theme-main-background-color-button-hover: hsl(255, 100%, 20%);
+		--gg-theme-main-border-color-button-hover: hsl(310, 100%, 50%);
+		--gg-theme-main-text-color-button-hover: hsl(30, 100%, 50%);
+		--gg-theme-alternate-background-color-button-hover: hsl(30, 100%, 50%);
+		--gg-theme-alternate-border-color-button-hover: hsl(220, 100%, 50%);
+		--gg-theme-alternate-text-color-button-hover: hsl(255, 80%, 20%);
+			/*
+				*  *  * ACTIVE *  *  *
+			*/
+		--gg-theme-main-background-color-button-active: hsl(285, 80%, 20%);
+		--gg-theme-main-border-color-button-active: hsl(290, 58%, 77%);
+		--gg-theme-main-text-color-button-active: hsl(50, 48%, 90%);
+		--gg-theme-alternate-background-color-button-active: hsl(265, 100%, 30%);
+		--gg-theme-alternate-border-color-button-active: hsl(310, 100%, 50%);
+		--gg-theme-alternate-text-color-button-active: hsl(50, 80%, 60%);
 
-      /*
-         *  *  *  *  *  *  *  *  *  *  *  *  *
-         *  *  *  *  FORMS & FIELDS *  *  *  *
-         *  *  *  *  *  *  *  *  *  *  *  *  *
-      */
-         /*
-            *  *  * BASE *  *  *
-         */
-      --gg-theme-main-border-color-form-fieldset: hsl(285, 80%, 20%);
-      --gg-theme-main-border-color-form-focus: hsl(253, 41%, 33%);
-      --gg-theme-main-text-color-form-label: hsl(40, 5%, 90%);
-      --gg-theme-main-text-color-form-note: hsl(50, 80%, 80%);
-         /*
-            *  *  * INPUT *  *  *
-         */
-      --gg-theme-main-background-color-form-input: hsl(30, 30%, 80%);
-      --gg-theme-main-border-color-form-input: hsl(285, 80%, 20%);
-      --gg-theme-main-text-color-form-input: hsl(260, 40%, 20%);
-      --gg-theme-main-text-color-form-input-placeholder: hsl(265, 20%, 10%);
-         /*
-            *  *  * SELECT *  *  *
-         */
-      --gg-theme-main-background-color-form-select: hsl(30, 30%, 80%);
-      --gg-theme-main-border-color-form-select: hsl(285, 80%, 20%);
-      --gg-theme-main-text-color-form-select: hsl(260, 40%, 20%);
-      --gg-theme-main-background-color-form-select-option: hsla(30, 10%, 85%, 80%);
-      --gg-theme-main-text-color-form-select-option: hsl(260, 34%, 13%);
-         /*
-            *  *  * BUTTON *  *  *
-         */
-            /*
-               *  *  * BASE *  *  *
-            */
-         --gg-theme-main-text-font-form-button: 'Inknut Antiqua', serif;
-         --gg-theme-main-background-color-form-button: hsl(255, 100%, 20%);
-         --gg-theme-main-border-color-form-button: hsl(50, 100%, 40%);
-         --gg-theme-main-text-color-form-button: hsl(50, 58%, 77%);
-            /*
-               *  *  * HOVER *  *  *
-            */
-         --gg-theme-main-background-color-form-button-hover: hsl(255, 100%, 20%);
-         --gg-theme-main-border-color-form-button-hover: hsl(310, 100%, 50%);
-         --gg-theme-main-text-color-form-button-hover: hsl(30, 100%, 50%);
-            /*
-               *  *  * ACTIVE *  *  *
-            */
-         --gg-theme-main-background-color-form-button-active: hsl(285, 80%, 20%);
-         --gg-theme-main-border-color-form-button-active: hsl(290, 58%, 77%);
-         --gg-theme-main-text-color-form-button-active: hsl(50, 48%, 90%);
+		/*
+			*  *  *  *  *  *  *  *  *  *  *
+			*  *  *  INLINE BUTTON  *  *  *
+			*  *  *  *  *  *  *  *  *  *  *
+		*/
+			/*
+				*  *  * BASE *  *  *
+			*/
+		--gg-theme-main-text-font-inline-button: 'Inknut Antiqua', serif;
+		--gg-theme-main-background-color-inline-button: hsla(241, 70%, 69%, 0.749);
+		--gg-theme-main-border-color-inline-button: hsl(259, 100%, 15%);
+		--gg-theme-main-text-color-inline-button: hsl(240, 10%, 15%);
+			/*
+				*  *  * HOVER *  *  *
+			*/
+		--gg-theme-main-background-color-inline-button-hover: hsl(43, 17%, 76%);
+		--gg-theme-main-border-color-inline-button-hover: hsl(260, 70%, 25%);
+		--gg-theme-main-text-color-inline-button-hover: hsl(240, 10%, 15%);
+			/*
+				*  *  * ACTIVE *  *  *
+			*/
+		--gg-theme-main-background-color-inline-button-active: hsl(285, 80%, 20%);
+		--gg-theme-main-border-color-inline-button-active: hsl(310, 100%, 50%);
+		--gg-theme-main-text-color-inline-button-active: hsl(45, 33%, 93%);
 
-      /*
-         *  *  *  *  *  *  *  *  *  *  *
-         *  *  *  * TEXT TAGS *  *  *  *
-         *  *  *  *  *  *  *  *  *  *  *
-      */
-         /*
-            *  *  * HEADER x3 *  *  *
-         */
-      --gg-theme-main-text-size-header-1: 3rem;
-      --gg-theme-main-text-size-header-2: 2.5rem;
-      --gg-theme-main-text-size-header-3: 2rem;
-      --gg-theme-main-text-color-header-1: hsl(50, 100%, 40%);
-      --gg-theme-main-text-color-header-2: hsl(50, 100%, 40%);
-      --gg-theme-main-text-color-header-3: hsl(50, 100%, 40%);
-      --gg-theme-main-text-font-header-1: 'EB Garamond', serif;
-      --gg-theme-main-text-font-header-2: 'Average', serif ;
-      --gg-theme-main-text-font-header-3: 'Inknut Antiqua', serif ;
-         /*
-            *  *  * SUBHEADER x3 *  *  *
-         */
-      --gg-theme-main-text-size-subheader-1: 1.75rem;
-      --gg-theme-main-text-size-subheader-2: 1.5rem;
-      --gg-theme-main-text-size-subheader-3: 1.25rem;
-      --gg-theme-main-text-color-subheader-1: hsl(50, 100%, 40%);
-      --gg-theme-main-text-color-subheader-2: hsl(50, 100%, 40%);
-      --gg-theme-main-text-color-subheader-3: hsl(50, 100%, 40%);
-      --gg-theme-main-text-font-subheader-1: 'Domine', 'serif';
-      --gg-theme-main-text-font-subheader-2: 'EB Garamond', serif;
-      --gg-theme-main-text-font-subheader-3: 'Inknut Antiqua', serif ;;
-         /*
-            *  *  *  BODY  *  *  *
-         */
-      --gg-theme-main-text-size-body: 1rem;
-      --gg-theme-main-text-size-body-big: 1.25rem;
-      --gg-theme-main-text-size-body-small: 0.875rem;
-      --gg-theme-main-text-size-body-tiny: 0.75rem;
-      --gg-theme-main-text-color-body: hsl(50, 100%, 40%);
-      --gg-theme-main-text-color-body-alt: hsl(50, 100%, 40%);
-      --gg-theme-main-text-font-body: 'Alice', serif;
-      --gg-theme-main-text-font-body-alt: 'Libre Franklin', serif;
+		/*
+			*  *  *  *  *  *  *  *  *  *  *  *  *
+			*  *  *  *  FORMS & FIELDS *  *  *  *
+			*  *  *  *  *  *  *  *  *  *  *  *  *
+		*/
+			/*
+				*  *  * BASE *  *  *
+			*/
+		--gg-theme-main-border-color-form-fieldset: hsl(285, 80%, 20%);
+		--gg-theme-main-border-color-form-focus: hsl(253, 41%, 33%);
+		--gg-theme-main-text-color-form-label: hsl(40, 5%, 90%);
+		--gg-theme-main-text-color-form-note: hsl(50, 80%, 80%);
+			/*
+				*  *  * INPUT *  *  *
+			*/
+		--gg-theme-main-background-color-form-input: hsl(30, 30%, 80%);
+		--gg-theme-main-border-color-form-input: hsl(285, 80%, 20%);
+		--gg-theme-main-text-color-form-input: hsl(260, 40%, 20%);
+		--gg-theme-main-text-color-form-input-placeholder: hsl(265, 20%, 10%);
+			/*
+				*  *  * SELECT *  *  *
+			*/
+		--gg-theme-main-background-color-form-select: hsl(30, 30%, 80%);
+		--gg-theme-main-border-color-form-select: hsl(285, 80%, 20%);
+		--gg-theme-main-text-color-form-select: hsl(260, 40%, 20%);
+		--gg-theme-main-background-color-form-select-option: hsla(30, 10%, 85%, 80%);
+		--gg-theme-main-text-color-form-select-option: hsl(260, 34%, 13%);
+			/*
+				*  *  * BUTTON *  *  *
+			*/
+				/*
+					*  *  * BASE *  *  *
+				*/
+			--gg-theme-main-text-font-form-button: 'Inknut Antiqua', serif;
+			--gg-theme-main-background-color-form-button: hsl(255, 100%, 20%);
+			--gg-theme-main-border-color-form-button: hsl(50, 100%, 40%);
+			--gg-theme-main-text-color-form-button: hsl(50, 58%, 77%);
+				/*
+					*  *  * HOVER *  *  *
+				*/
+			--gg-theme-main-background-color-form-button-hover: hsl(255, 100%, 20%);
+			--gg-theme-main-border-color-form-button-hover: hsl(310, 100%, 50%);
+			--gg-theme-main-text-color-form-button-hover: hsl(30, 100%, 50%);
+				/*
+					*  *  * ACTIVE *  *  *
+				*/
+			--gg-theme-main-background-color-form-button-active: hsl(285, 80%, 20%);
+			--gg-theme-main-border-color-form-button-active: hsl(290, 58%, 77%);
+			--gg-theme-main-text-color-form-button-active: hsl(50, 48%, 90%);
 
+		/*
+			*  *  *  *  *  *  *  *  *  *  *
+			*  *  *  * TEXT TAGS *  *  *  *
+			*  *  *  *  *  *  *  *  *  *  *
+		*/
+			/*
+				*  *  * HEADER x3 *  *  *
+			*/
+		--gg-theme-main-text-color-header-1: hsl(50, 100%, 40%);
+		--gg-theme-main-text-color-header-2: hsl(50, 100%, 40%);
+		--gg-theme-main-text-color-header-3: hsl(50, 100%, 40%);
+		--gg-theme-main-text-font-header-1: 'EB Garamond', serif;
+		--gg-theme-main-text-font-header-2: 'Average', serif ;
+		--gg-theme-main-text-font-header-3: 'Inknut Antiqua', serif;
+		--gg-theme-alternate-text-color-header-1: hsl(50, 100%, 40%);
+		--gg-theme-alternate-text-color-header-2: hsl(50, 100%, 40%);
+		--gg-theme-alternate-text-color-header-3: hsl(50, 100%, 40%);
+		--gg-theme-alternate-text-font-header-1: 'EB Garamond', serif;
+		--gg-theme-alternate-text-font-header-2: 'Average', serif;
+		--gg-theme-alternate-text-font-header-3: 'Inknut Antiqua', serif;
 
-   /*
-      *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *  *  *  *  *  * ALTERNATE THEME *  *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   */
+			/*
+				*  *  * SUBHEADER x3 *  *  *
+			*/
+		--gg-theme-main-text-color-subheader-1: hsl(50, 100%, 40%);
+		--gg-theme-main-text-color-subheader-2: hsl(50, 100%, 40%);
+		--gg-theme-main-text-color-subheader-3: hsl(50, 100%, 40%);
+		--gg-theme-main-text-font-subheader-1: 'Domine', 'serif';
+		--gg-theme-main-text-font-subheader-2: 'EB Garamond', serif;
+		--gg-theme-main-text-font-subheader-3: 'Inknut Antiqua', serif;
+		--gg-theme-alternate-text-color-subheader-1: hsl(50, 100%, 40%);
+		--gg-theme-alternate-text-color-subheader-2: hsl(50, 100%, 40%);
+		--gg-theme-alternate-text-color-subheader-3: hsl(50, 100%, 40%);
+		--gg-theme-alternate-text-font-subheader-1: 'Domine', 'serif';
+		--gg-theme-alternate-text-font-subheader-2: 'EB Garamond', serif;
+		--gg-theme-alternate-text-font-subheader-3: 'Inknut Antiqua', serif;
 
-      /*
-         *  *  *  *  *  *  *  *
-         *  *  * SHARED *  *  *
-         *  *  *  *  *  *  *  *
-      */
-      --gg-theme-alternate-background-texture-parchment:
-         url('../assets/art/textures/gg-theme-alternate-texture-parchment.webp');
+			/*
+				*  *  *  BODY  *  *  *
+			*/
+		--gg-theme-main-text-color-body: hsl(50, 100%, 40%);
+		--gg-theme-main-text-color-body-alt: hsl(50, 100%, 40%);
+		--gg-theme-main-text-font-body: 'Alice', serif;
+		--gg-theme-main-text-font-body-alt: 'Libre Franklin', serif;
+		--gg-theme-alternate-text-color-body: hsl(50, 100%, 40%);
+		--gg-theme-alternate-text-color-body-alt: hsl(50, 100%, 40%);
+		--gg-theme-alternate-text-font-body: 'Libre Franklin', serif;
+		--gg-theme-alternate-text-font-body-alt: 'Alice', serif;
 
-      --gg-theme-alternate-background-color-gradient-1: hsla(310, 86%, 32%, 25%);
-      --gg-theme-alternate-background-color-gradient-2: hsla(295, 74%, 26%, 25%);
-      --gg-theme-alternate-background-color-gradient-3: hsla(271, 78%, 34%, 25%);
-      --gg-theme-alternate-background-color-gradient-4: hsla(255, 99%, 20%, 25%);
-
-      --gg-theme-alternate-shadow-color-base: hsl(175, 100%, 50%);
-      --gg-theme-alternate-shadow-color-highlight: hsl(220, 100%, 50%);
-      --gg-theme-alternate-shadow-color-active: hsl(35, 100%, 50%);
-
-      --gg-theme-alternate-text-color-link: hsl(290, 100%, 75%);
-      --gg-theme-alternate-text-color-selection: hsl(50, 48%, 90%);
-      --gg-theme-alternate-background-color-selection: hsl(265, 100%, 30%);
-
-      /*
-         *  *  *  *  *  *  *  *
-         *  *  * WINDOW *  *  *
-         *  *  *  *  *  *  *  *
-      */
-         /*
-            *  *  * BASE *  *  *
-         */
-      --gg-theme-alternate-background-gradient-window:
-         linear-gradient(to bottom right,
-            var(--gg-theme-alternate-background-color-gradient-1),
-            var(--gg-theme-alternate-background-color-gradient-2),
-            var(--gg-theme-alternate-background-color-gradient-3),
-            var(--gg-theme-alternate-background-color-gradient-4)),
-         var(--gg-theme-alternate-background-texture-parchment) top left repeat;
-      --gg-theme-alternate-border-color-window: hsl(50, 100%, 50%);
-      --gg-theme-alternate-text-color-window: hsl(60, 38%, 87%);
-      --gg-theme-alternate-text-color-window-alt: hsl(22, 11%, 85%);
-         /*
-            *  *  * HEADER *  *  *
-         */
-      --gg-theme-alternate-background-overlay-color-window-title: hsla(265, 100%, 30%, 0.251);
-      --gg-theme-alternate-border-overlay-color-window-title: hsl(50, 100%, 50%);
-      --gg-theme-alternate-text-overlay-color-window-title: hsl(50, 100%, 40%);
-      /*
-         *  *  *  *  *  *  *  *
-         *  *  * BUTTON *  *  *
-         *  *  *  *  *  *  *  *
-      */
-         /*
-            *  *  * BASE *  *  *
-         */
-      --gg-theme-alternate-text-font-button: 'Inknut Antiqua', serif;
-      --gg-theme-alternate-background-color-button: hsl(265, 80%, 20%);
-      --gg-theme-alternate-border-color-button: hsl(50, 100%, 60%);
-      --gg-theme-alternate-text-color-button: hsl(50, 80%, 60%);
-         /*
-            *  *  * HOVER *  *  *
-         */
-      --gg-theme-alternate-background-color-button-hover: hsl(265, 80%, $0%);
-      --gg-theme-alternate-border-color-button-hover: hsl(310, 100%, 50%);
-      --gg-theme-alternate-text-color-button-hover: hsl(220, 80%, 60%);
-         /*
-            *  *  * ACTIVE *  *  *
-         */
-      --gg-theme-alternate-background-color-button-active: hsl(285, 60%, 30%);
-      --gg-theme-alternate-border-color-button-active: hsl(265, 100%, 30%);
-      --gg-theme-alternate-text-color-button-active: hsl(30, 80%, 60%);
-      /*
-         *  *  *  *  *  *  *  *  *  *  *
-         *  *  *  * TEXT TAGS *  *  *  *
-         *  *  *  *  *  *  *  *  *  *  *
-      */
-         /*
-            *  *  * HEADER x3 *  *  *
-         */
-      --gg-theme-alternate-text-size-header-1: 5rem;
-      --gg-theme-alternate-text-size-header-2: 4.25rem;
-      --gg-theme-alternate-text-size-header-3: 3.5rem;
-      --gg-theme-alternate-text-color-header-1: hsl(50, 100%, 40%);
-      --gg-theme-alternate-text-color-header-2: hsl(50, 100%, 40%);
-      --gg-theme-alternate-text-color-header-3: hsl(50, 100%, 40%);
-      --gg-theme-alternate-text-font-header-1: 'EB Garamond', serif;
-      --gg-theme-alternate-text-font-header-2: 'Average', serif ;
-      --gg-theme-alternate-text-font-header-3: 'Inknut Antiqua', serif ;
-         /*
-            *  *  * SUBHEADER x3 *  *  *
-         */
-      --gg-theme-alternate-text-size-subheader-1: 2rem;
-      --gg-theme-alternate-text-size-subheader-2: 1.75rem;
-      --gg-theme-alternate-text-size-subheader-3: 1.5rem;
-      --gg-theme-alternate-text-color-subheader-1: hsl(50, 100%, 40%);
-      --gg-theme-alternate-text-color-subheader-2: hsl(50, 100%, 40%);
-      --gg-theme-alternate-text-color-subheader-3: hsl(50, 100%, 40%);
-      --gg-theme-alternate-text-font-subheader-1: 'Domine', 'serif';
-      --gg-theme-alternate-text-font-subheader-2: 'EB Garamond', serif;
-      --gg-theme-alternate-text-font-subheader-3: 'Inknut Antiqua', serif ;;
-         /*
-            *  *  *  BODY  *  *  *
-         */
-      --gg-theme-alternate-text-color-body: hsl(50, 100%, 40%);
-      --gg-theme-alternate-text-color-body-alt: hsl(50, 100%, 40%);
-      --gg-theme-alternate-text-size-body-big:     1.125rem;
-      --gg-theme-alternate-text-size-body:        0.875rem;
-      --gg-theme-alternate-text-size-body-small:   0.75rem;
-      --gg-theme-alternate-text-size-body-tiny:    0.625rem;
-      --gg-theme-alternate-text-font-body: 'Libre Franklin', serif;
-      --gg-theme-alternate-text-font-body-alt: 'Alice', serif;
 
  /*
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  VARIABLE OVERRIDE *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  VARIABLE OVERRIDE *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 */
-   --minimized-width: 200px;
-   --font-monospace: "JetBrains Mono Regular", "Roboto Mono", monospace;
+	--font-monospace: "JetBrains Mono Regular", "Roboto Mono", monospace;
 
-   --color-text-selection: var(--gg-theme-main-text-color-selection);
-   --color-text-selection-bg: var(--gg-theme-main-background-color-selection);
-   --color-level-error: hsl(50, 30%, 70%);
-   --color-level-error-bg: hsla(355, 100%, 20%, 0.8);
-   --color-level-error-border: hsla(355, 20%, 10%, 0.8);
-   --color-level-info: hsl(50, 10%, 70%);
-   --color-level-info-bg: hsla(217, 47%, 35%, 0.8);
-   --color-level-info-border: hsla(217, 47%, 10%, 0.8);
-   --color-level-success: hsl(40, 10%, 80%);
-   --color-level-success-bg: hsla(126, 61%, 20%, 0.8);
-   --color-level-success-border: hsla(126, 60%, 5%, 0.8);
-   --color-level-warning: hsl(42, 2%, 80%);
-   --color-level-warning-bg: hsla(35, 100%, 30%, 0.8);
-   --color-level-warning-border: hsla(42, 30%, 10%, 0.8);
+	--color-text-selection: var(--gg-theme-main-text-color-selection);
+	--color-text-selection-bg: var(--gg-theme-main-background-color-selection);
+	--color-level-error: hsl(50, 30%, 70%);
+	--color-level-error-bg: hsla(355, 100%, 20%, 0.8);
+	--color-level-error-border: hsla(355, 20%, 10%, 0.8);
+	--color-level-info: hsl(50, 10%, 70%);
+	--color-level-info-bg: hsla(217, 47%, 35%, 0.8);
+	--color-level-info-border: hsla(217, 47%, 10%, 0.8);
+	--color-level-success: hsl(40, 10%, 80%);
+	--color-level-success-bg: hsla(126, 61%, 20%, 0.8);
+	--color-level-success-border: hsla(126, 60%, 5%, 0.8);
+	--color-level-warning: hsl(42, 2%, 80%);
+	--color-level-warning-bg: hsla(35, 100%, 30%, 0.8);
+	--color-level-warning-border: hsla(42, 30%, 10%, 0.8);
 
-   --color-scrollbar: var(--gg-theme-main-color-scrollbar);
-   --color-scrollbar-track: transparent;
-   --color-scrollbar-border: none;
+	--color-scrollbar: var(--gg-theme-main-color-scrollbar);
+	--color-scrollbar-track: transparent;
+	--color-scrollbar-border: none;
 
-      /*
-         *  *  * BODY *  *  *
-      */
-   color: var(--gg-theme-main-text-color-body);
-   font: var(--gg-theme-main-text-font-body);
-   font-size: var(--gg-theme-main-text-size-body);
+	--color-underline-header: var(--gg-theme-alternate-border-color-window-header);
 
-   flex: none;
-   & .flexrow>*,
-   & .flexcol>* {
-      flex: none;
-   }
+		/*
+			*  *  * BODY *  *  *
+		*/
+	color: var(--gg-theme-main-text-color-body);
+	font: var(--gg-theme-main-text-font-body);
 
-   & h1 {
-      font-size: var(--gg-theme-main-text-size-header-1);
-      font-family: var(--gg-theme-main-text-font-header-1);
-      color: var(--gg-theme-main-text-color-header-1);
-   }
-   & h2 {
-      font-size: var(--gg-theme-main-text-size-header-2);
-      font-family: var(--gg-theme-main-text-font-header-2);
-      color: var(--gg-theme-main-text-color-header-2);
-   }
-   & h3 {
-      font-size: var(--gg-theme-main-text-size-header-3);
-      font-family: var(--gg-theme-main-text-font-header-3);
-      color: var(--gg-theme-main-text-color-header-3);
-   }
-   & h4 {
-      font-size: var(--gg-theme-main-text-size-subheader-1);
-      font-family: var(--gg-theme-main-text-font-subheader-1);
-      color: var(--gg-theme-main-text-color-subheader-1);
-   }
-   & h5 {
-      font-size: var(--gg-theme-main-text-size-subheader-2);
-      font-family: var(--gg-theme-main-text-font-subheader-2);
-      color: var(--gg-theme-main-text-color-subheader-2);
-   }
-   & h6 {
-      font-size: var(--gg-theme-main-text-size-subheader-3);
-      font-family: var(--gg-theme-main-text-font-subheader-3);
-      color: var(--gg-theme-main-text-color-subheader-3);
-   }
-   & p {
-      font-size: var(--gg-theme-main-text-size-body-1);
-      font-family: var(--gg-theme-main-text-font-body-1);
-      color: var(--gg-theme-main-text-color-body-1);
-   }
+	& h1 {
+		font-family: var(--gg-theme-main-text-font-header-1);
+		color: var(--gg-theme-main-text-color-header-1);
+	}
+	& h2 {
+		font-family: var(--gg-theme-main-text-font-header-2);
+		color: var(--gg-theme-main-text-color-header-2);
+	}
+	& h3 {
+		font-family: var(--gg-theme-main-text-font-header-3);
+		color: var(--gg-theme-main-text-color-header-3);
+	}
+	& h4 {
+		font-family: var(--gg-theme-main-text-font-subheader-1);
+		color: var(--gg-theme-main-text-color-subheader-1);
+	}
+	& h5 {
+		font-family: var(--gg-theme-main-text-font-subheader-2);
+		color: var(--gg-theme-main-text-color-subheader-2);
+	}
+	& h6 {
+		font-family: var(--gg-theme-main-text-font-subheader-3);
+		color: var(--gg-theme-main-text-color-subheader-3);
+	}
+	& p {
+		font-family: var(--gg-theme-main-text-font-body-1);
+		color: var(--gg-theme-main-text-color-body-1);
+	}
 
 /*
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  * ELEMENT STYLING *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  * ELEMENT STYLING *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 */
-   /*
-      *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  MAIN WINDOW *  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *
-   */
-   & .app,
-   & .window-app,
-   & .application {
-      background: var(--gg-theme-main-background-color-gradient-window);
-      border: 2px ridge var(--gg-theme-main-border-color-window);
-      color: var(--gg-theme-main-text-color-window);
-      box-shadow: none;
-      box-sizing: border-box;
-      border-radius: 8px;
-      height: max-content;
-      width: max-content;
-      max-height: var(--gg-theme-main-background-size-window-height);
-      max-width: var(--gg-theme-main-background-size-window-width);
-      transform-origin: top left;
-      margin: 0;
-      padding: 1px 2px;
+	/*
+		*  *  *  *  *  *  *  *  *  *  *
+		*  *  *  * WINDOW | APP *  *  *
+		*  *  *  *  *  *  *  *  *  *  *
+	*/
+	& .app,
+	& .window-app,
+	& .application {
+		background:
+			linear-gradient( to right,
+				var(--gg-theme-main-background-color-gradient-1),
+				var(--gg-theme-main-background-color-gradient-2),
+				var(--gg-theme-main-background-color-gradient-1)
+			),
+			var(--gg-theme-main-background-texture-parchment);
+		border: 2px ridge var(--gg-theme-main-border-color-window);
+		color: var(--gg-theme-main-text-color-window);
+		box-shadow: none;
+		border-radius: 8px;
 
-      & .window-header {
-         background: var(--gg-theme-main-background-overlay-color-window-header);
-         height: var(--gg-theme-main-background-size-window-header-height);
-         border-bottom: 2px solid var(--gg-theme-main-border-color-window-header);
-         font-size: var(--gg-theme-main-text-size-window-header);
-         color: var(--gg-theme-main-text-color-window-header);
-         &>h4.window-title {
-            font-size: var(--gg-theme-main-text-size-window-header-title);
-            font: var(--gg-theme-main-text-font-window-header-title);
-         }
-      }
-      & .window-content,
-      & .journal-entry-content {
-         background: var(--gg-theme-main-background-overlay-color-window-content);
-         color: var(--gg-theme-main-text-color-window-content);
-         font-size: var(--gg-theme-main-text-size-window);
-         display: flex;
-         flex-direction: column;
-         flex-wrap: nowrap;
-         justify-content: flex-start;
-         padding: 0px;
-         overflow-y: auto;
-         overflow-x: hidden;
-      }
-      & aside.sidebar {
-         background: var(--gg-theme-main-background-overlay-color-window-aside);
-         border-right: 2px double var(--gg-theme-main-border-color-window-aside);
-         font-size: var(--gg-theme-main-text-size-window-aside);
-         color: var(--gg-theme-main-text-color-window-aside);
-         /* &>nav.tabs {
-            & a.item.category-tab {
-               border-bottom: 1px solid var(--gg-theme-main-border-color-window-seperator);
-               &:active {
-                  text-shadow: 0 0 10px var(--gg-theme-main-shadow-color-base);
-               }
-            }
-         } */
-      }
-      & :is(#tooltip, .locked-tooltip) {
-         background: var(--gg-theme-main-background-color-gradient-window-tooltip);
-         border: var(--gg-theme-main-border-color-window-tooltip);
-         color: var(--gg-theme-main-text-color-window-tooltip);
-         font-size: var(--gg-theme-main-text-size-window-tooltip);
-      }
-   }
-      /*
-         *  *  *  *  *  *  *
-         *  *  BUTTON   *  *
-         *  *  *  *  *  *  *
-      */
-   & button {
-      background: var(--gg-theme-main-background-color-button);
-      border: 1px solid var(--gg-theme-main-border-color-button);
-      color: var(--gg-theme-main-text-color-button);
-      padding: 0.5rem 2rem;
-      &:hover {
-         background-color: var(--gg-theme-main-background-color-button-hover);
-         border: 1px solid var(--gg-theme-main-border-color-button-hover);
-         color: var(--gg-theme-main-text-color-button-hover);
-      }
-      &:active {
-         background-color: var(--gg-theme-main-background-color-button-active);
-         border: 1px solid var(--gg-theme-main-border-color-button-active);
-         color: var(--gg-theme-main-text-color-button-active);
-      }
-   }
-   /*
-      *  *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *   FORM    *  *  *  *  *
-      *  *  *  *  INPUT|SELECT   *  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *  *  *
-   */
-   & form {
-      border: 1px solid var(--gg-theme-main-border-color-form-fieldset);
-      & .notes,
-      & .hint {
-         color: var(--gg-theme-main-text-color-form-note);
-      }
-      & label {
-         color: var(--gg-theme-main-text-color-form-label);
-      }
-      &:focus {
-         border-color: var(--gg-theme-main-border-color-form-focus);
-      }
-      & input,
-      & #module-management input {
-         background: var(--gg-theme-main-background-color-form-input);
-         border: 1px dashed var(--gg-theme-main-border-color-form-input);
-         color: var(--gg-theme-main-text-color-form-input);
-         &::placeholder {
-            color: var(--gg-theme-main-text-color-form-input-placeholder);
-         }
-      }
-      & select,
-      & #module-management select {
-         background: var(--gg-theme-main-background-color-form-select);
-         border: 1px dashed var(--gg-theme-main-border-color-form-select);
-         color: var(--gg-theme-main-text-color-form-select);
-         &>option {
-            background: var(--gg-theme-main-background-color-form-select-option);
-            color: var(--gg-theme-main-text-color-form-select-option);
-         }
-      }
-      & button {
-         background: var(--gg-theme-main-background-color-form-button);
-         border: 1px solid var(--gg-theme-main-border-color-form-button);
-         color: var(--gg-theme-main-text-color-form-button);
-         padding: 0.5rem 2rem;
-         &:hover {
-            background-color: var(--gg-theme-main-background-color-form-button-hover);
-            border: 1px solid var(--gg-theme-main-border-color-form-button-hover);
-            color: var(--gg-theme-main-text-color-form-button-hover);
-         }
-         &:active {
-            background-color: var(--gg-theme-main-background-color-form-button-active);
-            border: 1px solid var(--gg-theme-main-border-color-form-button-active);
-            color: var(--gg-theme-main-text-color-form-button-active);
-         }
-      }
-   }
+		& .window-header {
+			background: var(--gg-theme-main-background-overlay-color-window-header);
+			border-bottom: 2px solid var(--gg-theme-main-border-color-window-header);
+			color: var(--gg-theme-main-text-color-window-header);
+			&>h4.window-title {
+				color: var(--gg-theme-main-text-color-window-header);
+				font: var(--gg-theme-main-text-font-window-header-title);
+			}
+		}
+		& .window-content,
+		& .journal-entry-content {
+			background: var(--gg-theme-main-background-overlay-color-window-content);
+			color: var(--gg-theme-main-text-color-window-content);
+		}
+		& aside.sidebar {
+			background: var(--gg-theme-main-background-overlay-color-window-aside);
+			border-right: 2px double var(--gg-theme-main-border-color-window-aside);
+			color: var(--gg-theme-main-text-color-window-aside);
+			/* &>nav.tabs {
+				& a.item.category-tab {
+					border-bottom: 1px solid var(--gg-theme-main-border-color-window-seperator);
+					&:active {
+						text-shadow: 0 0 10px var(--gg-theme-main-shadow-color-base);
+					}
+				}
+			} */
+		}
+		& :is(#tooltip, .locked-tooltip) {
+			background: var(--gg-theme-main-background-color-gradient-window-tooltip);
+			border: var(--gg-theme-main-border-color-window-tooltip);
+			color: var(--gg-theme-main-text-color-window-tooltip);
+		}
+	}
+		/*
+			*  *  *  *  *  *  *
+			*  *  BUTTON   *  *
+			*  *  *  *  *  *  *
+		*/
+	& button {
+		background: var(--gg-theme-main-background-color-button);
+		border: 1px solid var(--gg-theme-main-border-color-button);
+		color: var(--gg-theme-main-text-color-button);
+		&.hover {
+			background-color: var(--gg-theme-main-background-color-button-hover);
+			border: 1px solid var(--gg-theme-main-border-color-button-hover);
+			color: var(--gg-theme-main-text-color-button-hover);
+		}
+		&.active {
+			background-color: var(--gg-theme-main-background-color-button-active);
+			border: 1px solid var(--gg-theme-main-border-color-button-active);
+			color: var(--gg-theme-main-text-color-button-active);
+		}
+	}
+	/*
+		*  *  *  *  *  *  *  *  *  *  *  *  *
+		*  *  *  *  *   FORM    *  *  *  *  *
+		*  *  *  *  INPUT|SELECT   *  *  *  *
+		*  *  *  *  *  *  *  *  *  *  *  *  *
+	*/
+	& form {
+		border: 1px solid var(--gg-theme-main-border-color-form-fieldset);
+		& .notes,
+		& .hint {
+			color: var(--gg-theme-main-text-color-form-note);
+		}
+		& label {
+			color: var(--gg-theme-main-text-color-form-label);
+		}
+		&:focus {
+			border-color: var(--gg-theme-main-border-color-form-focus);
+		}
+		& input,
+		& #module-management input {
+			background: var(--gg-theme-main-background-color-form-input);
+			border: 1px solid var(--gg-theme-main-border-color-form-input);
+			color: var(--gg-theme-main-text-color-form-input);
+			&::placeholder {
+				color: var(--gg-theme-main-text-color-form-input-placeholder);
+			}
+		}
+		& select,
+		& #module-management select {
+			background: var(--gg-theme-main-background-color-form-select);
+			border: 1px solid var(--gg-theme-main-border-color-form-select);
+			color: var(--gg-theme-main-text-color-form-select);
+			&>option {
+				background: var(--gg-theme-main-background-color-form-select-option);
+				color: var(--gg-theme-main-text-color-form-select-option);
+			}
+		}
+		& button {
+			background: var(--gg-theme-main-background-color-form-button);
+			border: 1px solid var(--gg-theme-main-border-color-form-button);
+			color: var(--gg-theme-main-text-color-form-button);
+			&:hover {
+				background-color: var(--gg-theme-main-background-color-form-button-hover);
+				border: 1px solid var(--gg-theme-main-border-color-form-button-hover);
+				color: var(--gg-theme-main-text-color-form-button-hover);
+			}
+			&:active {
+				background-color: var(--gg-theme-main-background-color-form-button-active);
+				border: 1px solid var(--gg-theme-main-border-color-form-button-active);
+				color: var(--gg-theme-main-text-color-form-button-active);
+			}
+		}
+	}
 
-   /* FilePicker Support */
-   & .filepicker .standard-form {
-      color: var(--gg-theme-main-text-color-form-label);
-   }
+	/* FilePicker Support */
+	& .filepicker .standard-form {
+		color: var(--gg-theme-main-text-color-form-label);
+	}
 
-   & #ui-left {
-      /*
-         *  *  *  *  *  *  *  *  *  *
-         *  * LEFT-SIDE-CONTROLS *  *
-         *  *  *  *  *  *  *  *  *  *
-      */
-      & #controls ol.control-tools li {
-         background: var(--gg-theme-alternate-background-color-button);
-         border: 1px solid var(--gg-theme-alternate-border-color-button);
-         color: var(--gg-theme-alternate-text-color-button);
-         box-shadow: none;
-         &:hover {
-            background-color: var(--gg-theme-alternate-background-color-button-hover);
-            border-color: var(--gg-theme-alternate-border-color-button-hover);
-            color: var(--gg-theme-alternate-text-color-button-hover);
-            box-shadow: 0 0 10px var(--gg-theme-alternate-shadow-color-highlight);
-         }
-         &:active {
-            background-color: var(--gg-theme-alternate-background-color-button-active);
-            border-color: var(--gg-theme-alternate-border-color-button-active);
-            color: var(--gg-theme-alternate-text-color-button-active);
-            box-shadow: 0 0 10px var(--gg-theme-alternate-shadow-color-active);
-         }
-      }
-   }
-   & #ui-middle {
-      /*
-         *  *  *  *  *  *  *  *  *  *
-         *  *  Navigation Bar *  *  *
-         *  *  *  *  *  *  *  *  *  *
-      */
-      /* & #controls ol.control-tools.main-controls, */
-      & header {
-         & #nav-moulinette-toggle,
-         & #navigation #nav-toggle,
-         & #navigation #scene-list nav-item.scene {
-            background: var(--gg-theme-alternate-background-color-button);
-            border: 1px solid var(--gg-theme-alternate-border-color-button);
-            color: var(--gg-theme-alternate-text-color-button);
-            box-shadow: none;
-            &:hover {
-               background-color: var(--gg-theme-alternate-background-color-button-hover);
-               border-color: var(--gg-theme-alternate-border-color-button-hover);
-               color: var(--gg-theme-alternate-text-color-button-hover);
-               box-shadow: 0 0 10px var(--gg-theme-alternate-shadow-color-highlight);
-            }
-            &:active {
-               background-color: var(--gg-theme-alternate-background-color-button-active);
-               border-color: var(--gg-theme-alternate-border-color-button-active);
-               color: var(--gg-theme-alternate-text-color-button-active);
-               box-shadow: 0 0 10px var(--gg-theme-alternate-shadow-color-active);
-            }
-         }
-         & #navigation #scene-list .gm {
-            background-color: (--gg-theme-main-background-color-button);
-            border: 2px double var(--gg-theme-main-border-color-button);
-            color: var(--gg-theme-main-text-color-button);
-         }
-      }
-   }
-   & a.inline-roll,
-   & .editor a.content-link,
-   & .filepicker .favorites .path,
-   & .filepicker .display-modes a,
-   & .dnd5e.advancement .items-list .content-link,
-   & .roll-link {
-      background: var(--gg-theme-main-background-color-inline-button);
-      border: var(--gg-theme-main-border-color-inline-button);
-      color: var(--gg-theme-main-text-color-inline-button);
-      &:hover {
-         background-color: var(--gg-theme-main-background-color-inline-button-hover);
-         border: 1px solid var(--gg-theme-main-border-color-inline-button-hover);
-         color: var(--gg-theme-main-text-color-inline-button-hover);
-      }
-      &:active {
-         background-color: var(--gg-theme-main-background-color-inline-button-active);
-         border: 1px solid var(--gg-theme-main-border-color-inline-button-active);
-         color: var(--gg-theme-main-text-color-inline-button-active);
-      }
-   }
-   & #hotbar {
-      color: var(--gg-theme-alternate-text-color-button);
-      border: 1px solid var(--gg-theme-alternate-border-color-button);
-   }
-   /* & #nav-moulinette-toggle {
-      height: 30px;
-      background: var(--gg-theme-alternate-background-color-button);
-      text-align: center;
-      line-height: 28px;
-      padding: 0 8px;
-      margin: 12px 8px 8px 0;
-      border: 1px solid var(--gg-theme-alternate-border-color-button);
-      border-radius: 3px;
-      max-height: 100%;
-      color: var(--gg-theme-alternate-text-color-button);
-      /* z-index: var(--z-index-app);
-      transform-origin: top left;
-      display: inline-block;
+	& #ui-left {
+		/*
+			*  *  *  *  *  *  *  *  *  *
+			*  * LEFT-SIDE-CONTROLS *  *
+			*  *  *  *  *  *  *  *  *  *
+		*/
+		& #controls {
+			& ol.control-tools {
+				&.main-controls,
+				&.sub-controls {
+					&>li.scene-control,
+					&>li.control-tool {
+						background: var(--gg-theme-alternate-background-color-button);
+						border: 1px solid var(--gg-theme-alternate-border-color-button);
+						color: var(--gg-theme-alternate-text-color-button);
+						box-shadow: none;
+						&.active {
+							background-color: var(--gg-theme-alternate-background-color-button-active);
+							border-color: var(--gg-theme-alternate-border-color-button-active);
+							color: var(--gg-theme-alternate-text-color-button-active);
+						}
+						&:hover {
+							background-color: var(--gg-theme-alternate-background-color-button-hover);
+							border-color: var(--gg-theme-alternate-border-color-button-hover);
+							color: var(--gg-theme-alternate-text-color-button-hover);
+						}
+					}
+				}
+			}
+		}
+	}
 
-   } */
-   /* Taskbar Support */
-   & #taskbar {
-      background: var(--gg-theme-alternate-background-overlay-color-window-title);
-      border-top: 2px groove var(--gg-theme-alternate-border-overlay-color-window-title);
-      color: var(--gg-theme-alternate-text-overlay-color-window-title);
-      font-size: var(--gg-theme-alternate-text-size-overlay-window-title);
-      backdrop-filter: none;
-   }
-   & #start-menu {
-      background: var(--background-theme-alternate-1);
-      border-top: var(--border-theme-main-3);
-      border-right: var(--border-theme-main-3);
-   }
+	& #ui-middle {
+		/*
+			*  *  *  *  *  *  *  *  *  *
+			*  *  Navigation Bar *  *  *
+			*  *  *  *  *  *  *  *  *  *
+		*/
+		/* & #controls ol.control-tools.main-controls, */
+		& header {
+			& #nav-moulinette-toggle,
+			& #navigation #nav-toggle,
+			& #navigation #scene-list nav-item.scene {
+				background: var(--gg-theme-alternate-background-color-button);
+				border: 1px solid var(--gg-theme-alternate-border-color-button);
+				color: var(--gg-theme-alternate-text-color-button);
+				box-shadow: none;
+				&:hover {
+					background-color: var(--gg-theme-alternate-background-color-button-hover);
+					border-color: var(--gg-theme-alternate-border-color-button-hover);
+					color: var(--gg-theme-alternate-text-color-button-hover);
+					box-shadow: 0 0 10px var(--gg-theme-alternate-shadow-color-highlight);
+				}
+				&:active {
+					background-color: var(--gg-theme-alternate-background-color-button-active);
+					border-color: var(--gg-theme-alternate-border-color-button-active);
+					color: var(--gg-theme-alternate-text-color-button-active);
+					box-shadow: 0 0 10px var(--gg-theme-alternate-shadow-color-active);
+				}
+			}
+			& #navigation #scene-list .gm {
+				background-color: (--gg-theme-main-background-color-button);
+				border: 2px double var(--gg-theme-main-border-color-button);
+				color: var(--gg-theme-main-text-color-button);
+			}
+		}
+	}
+	&.mld-paused:after {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		content: '';
+		pointer-events: none;
+		box-shadow: rgba(var(--pause-border-color), 0.5) 0px 0px 100px 50px inset;
+		z-index: 0;
+	}
+	& a.inline-roll,
+	& .editor a.content-link,
+	& .filepicker .favorites .path,
+	& .filepicker .display-modes a,
+	& .dnd5e.advancement .items-list .content-link,
+	& .roll-link {
+		background: var(--gg-theme-main-background-color-inline-button);
+		border: var(--gg-theme-main-border-color-inline-button);
+		color: var(--gg-theme-main-text-color-inline-button);
+		&.hover {
+			background-color: var(--gg-theme-main-background-color-inline-button-hover);
+			border: 1px solid var(--gg-theme-main-border-color-inline-button-hover);
+			color: var(--gg-theme-main-text-color-inline-button-hover);
+		}
+		&.active {
+			background-color: var(--gg-theme-main-background-color-inline-button-active);
+			border: 1px solid var(--gg-theme-main-border-color-inline-button-active);
+			color: var(--gg-theme-main-text-color-inline-button-active);
+		}
+	}
+	& #hotbar {
+		color: var(--gg-theme-alternate-text-color-button);
+		border: 1px solid var(--gg-theme-alternate-border-color-button);
+	}
+	/* & #nav-moulinette-toggle {
+		height: 30px;
+		background: var(--gg-theme-alternate-background-color-button);
+		text-align: center;
+		line-height: 28px;
+		padding: 0 8px;
+		margin: 12px 8px 8px 0;
+		border: 1px solid var(--gg-theme-alternate-border-color-button);
+		border-radius: 3px;
+		max-height: 100%;
+		color: var(--gg-theme-alternate-text-color-button);
+		/* z-index: var(--z-index-app);
+		transform-origin: top left;
+		display: inline-block;
 
-   /*
-      *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *   MODULE  *  *  *  *
-      *  *  *  *  * MANAGEMENT*  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *  *
-   */
-   & #module-management {
-      & .app.window-app {
-         background: var(--gg-theme-alternate-background-gradient-window);
-         border: 2px double var(--gg-theme-alternate-border-color-window);
-         color: var(--gg-theme-alternate-text-color-window-1);
-         & .window-content {
-            background: transparent;
-            border: none;
-            color: var(--gg-theme-alternate-text-color-window-1);
-            & form button {
-               background: var(--gg-theme-alternate-background-color-button);
-               border: 1px solid var(--gg-theme-alternate-border-color-button);
-               color: var(--gg-theme-alternate-text-color-button);
-            }
-         }
-         & .window-header {
-            background: var(--gg-theme-alternate-background-overlay-color-window-title);
-            color: var(--gg-theme-alternate-text-overlay-color-window-title);
-            font-size: var(--gg-theme-alternate-text-size-overlay-window-title);
-            font-weight: normal
-         }
-      }
-      & #module-list.package-list {
-         border: none;
-         height: 60%;
-         & li.package {
-            border-left: 1px solid var(--gg-theme-main-border-color-form-fieldset);
-            & .package-title>.title-group {
-               color: var(--gg-theme-alternate-text-color-window-1);
-            }
-            & .package-overview button.tag.expand {
-               background: var(--gg-theme-alternate-background-color-button);
-               border: 1px solid var(--gg-theme-alternate-border-color-button);
-               color: var(--gg-theme-alternate-text-color-button);
-            }
-         }
-      }
-   }
+	} */
+	/* Taskbar Support */
+	& #taskbar {
+		background: var(--gg-theme-alternate-background-overlay-color-window-title);
+		border-top: 2px groove var(--gg-theme-alternate-border-overlay-color-window-title);
+		color: var(--gg-theme-alternate-text-overlay-color-window-title);
+		backdrop-filter: none;
+	}
+	& #start-menu {
+		background: var(--background-theme-alternate-1);
+		border-top: var(--border-theme-main-3);
+		border-right: var(--border-theme-main-3);
+	}
+
+	/*
+		*  *  *  *  *  *  *  *  *  *  *  *
+		*  *  *  *  *   MODULE  *  *  *  *
+		*  *  *  *  * MANAGEMENT*  *  *  *
+		*  *  *  *  *  *  *  *  *  *  *  *
+	*/
+	& #module-management {
+		& .app.window-app {
+			background: var(--gg-theme-alternate-background-gradient-window);
+			border: 2px double var(--gg-theme-alternate-border-color-window);
+			color: var(--gg-theme-alternate-text-color-window-1);
+			& .window-content {
+				background: transparent;
+				border: none;
+				color: var(--gg-theme-alternate-text-color-window-1);
+				& form button {
+					background: var(--gg-theme-alternate-background-color-button);
+					border: 1px solid var(--gg-theme-alternate-border-color-button);
+					color: var(--gg-theme-alternate-text-color-button);
+				}
+			}
+			& .window-header {
+				background: var(--gg-theme-alternate-background-overlay-color-window-title);
+				color: var(--gg-theme-alternate-text-overlay-color-window-title);
+				font-weight: normal
+			}
+		}
+		& #module-list.package-list {
+			border: none;
+			height: 60%;
+			& li.package {
+				border-left: 1px solid var(--gg-theme-main-border-color-form-fieldset);
+				& .package-title>.title-group {
+					color: var(--gg-theme-alternate-text-color-window-1);
+				}
+				& .package-overview button.tag.expand {
+					background: var(--gg-theme-alternate-background-color-button);
+					border: 1px solid var(--gg-theme-alternate-border-color-button);
+					color: var(--gg-theme-alternate-text-color-button);
+				}
+			}
+		}
+	}
 }
-   /*
-      *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *  *  *  * PLACEHOLDER OVERRIDES *  *  *  *  *  *  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-      *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-   */
+	/*
+		*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+		*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+		*  *  *  *  *  *  *  * PLACEHOLDER OVERRIDES *  *  *  *  *  *  *  *  *
+		*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+		*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+	*/
 body {
-      --button-background-color: #00ff2a;
-      --button-color-border: #00ff2a;
-      --button-color-text: #00ff2a;
-      --button-focus-outline-color: #00ff2a;
-      --button-hover-background-color: #00ff2a;
-      --button-hover-color-border: #00ff2a;
-      --button-hover-color-text: #00ff2a;
+		--color-dark-1: #00ff2a;
+		--color-dark-2: #00ff2a;
+		--color-dark-3: #00ff2a;
+		--color-dark-4: #00ff2a;
+		--color-dark-5: #00ff2a;
+		--color-dark-6: #00ff2a;
 
-      --input-background-color: #00ff2a;
-      --input-color-border: #00ff2a;
-      --input-color-text: #00ff2a;
-      --input-placeholder-color: #00ff2a;
-      --input-focus-outline-color: #00ff2a;
+		--color-text-dark-1: #00ff2a;
+		--color-text-dark-2: #00ff2a;
+		--color-text-dark-3: #00ff2a;
+		--color-text-dark-4: #00ff2a;
+		--color-text-dark-5: #00ff2a;
+		--color-text-dark-6: #00ff2a;
 
-      --color-bg-btn-minor-inactive: #00ff2a;
-      --color-bg-btn-minor-active: #00ff2a;
-      --color-border-light-tertiary: #00ff2a;
-      --color-border-dark-primary: #00ff2a;
+		--color-border-dark-1: #00ff2a;
+		--color-border-dark-2: #00ff2a;
+		--color-border-dark-3: #00ff2a;
+		--color-border-dark-4: #00ff2a;
+		--color-border-dark-5: #00ff2a;
 
-      --background: #00ff2a;
-      --color-text-primary: #00ff2a;
-      --color-header-background: #00ff2a;
-      --color-border: #00ff2a;
-      --color-fieldset-border: #00ff2a;
-      --color-form-hint: #00ff2a;
-      --color-form-hint-hover: #00ff2a;
-      --color-form-label: #00ff2a;
-      --color-form-label-hover: #00ff2a;
+		--color-text-dark-header: #00ff2a;
+		--color-text-dark-primary: #00ff2a;
+		--color-text-dark-secondary: #00ff2a;
 
-      --color-text-light-highlight: #00ff2a;
-      --color-text-light-heading: #00ff2a;
-      --color-text-light-primary: #00ff2a;
-      --color-text-dark-primary: #00ff2a;
-      --color-text-dark-alternate: #00ff2a;
-      --color-text-dark-header: #00ff2a;
-      --color-text-dark-inactive: #00ff2a;
-      --color-text-hyperlink: #00ff2a;
+		--bordercolor: #00ff2a;
+		--dnd5e-color-card: #00ff2a;
+		--dnd5e-color-dark: #00ff2a;
+		--dnd5e-color-parchment: #00ff2a;
+		--dnd5e-color-card-tint: #00ff2a;
 
-      --color-text-light-1: #00ff2a;
-      --color-text-dark-1: #00ff2a;
-
-      --color-border-light-1: #00ff2a;
-      --color-border-dark-1: #00ff2a;
-
-      --color-border-light-highlight: #00ff2a;
-      --color-border-light-primary: #00ff2a;
-      --color-border-light-alternate: #00ff2a;
-
-      --color-border-dark: #00ff2a;
-
-      --color-border-dark-alternate: #00ff2a;
-      --color-border-dark-tertiary: #00ff2a;
-      --color-border-highlight: #00ff2a;
-      --color-border-highlight-alt: #00ff2a;
-
-      --color-shadow-primary: #00ff2a;
-      --color-shadow-highlight: #00ff2a;
-      --color-shadow-dark: #00ff2a;
-
-      --color-text-light-0: #00ff2a;
-
-      --color-text-light-2: #00ff2a;
-      --color-text-light-3: #00ff2a;
-      --color-text-light-4: #00ff2a;
-      --color-text-light-5: #00ff2a;
-      --color-text-light-6: #00ff2a;
-      --color-text-light-7: #00ff2a;
-
-      --color-text-dark-2: #00ff2a;
-      --color-text-dark-3: #00ff2a;
-      --color-text-dark-4: #00ff2a;
-      --color-text-dark-5: #00ff2a;
-      --color-text-dark-6: #00ff2a;
-
-      --color-border-light-2: #00ff2a;
-
-      --color-border-dark-2: #00ff2a;
-      --color-border-dark-3: #00ff2a;
-      --color-border-dark-4: #00ff2a;
-      --color-border-dark-5: #00ff2a;
-
-      --color-underline-inactive: #00ff2a;
-      --color-underline-active: #00ff2a;
-      --color-underline-header: #00ff2a;
-
-      --color-checkbox-checked: #00ff2a;
-      --color-ownership-none: #00ff2a;
-      --color-ownership-observer: #00ff2a;
-      --color-ownership-owner: #00ff2a;
+		--dnd5e-color-olive: #00ff2a;
+		--dnd5e-color-tan: #00ff2a;
 
 
+		--button-background-color: #00ff2a;
+		--button-color-border: #00ff2a;
+		--button-color-text: #00ff2a;
+		--button-focus-outline-color: #00ff2a;
+		--button-hover-background-color: #00ff2a;
+		--button-hover-color-border: #00ff2a;
+		--button-hover-color-text: #00ff2a;
 
-      --color-warm-1: #00ff2a;
-      --color-warm-2: #00ff2a;
-      --color-warm-3: #00ff2a;
-      --color-cool-3: #00ff2a;
-      --color-cool-4: #00ff2a;
-      --color-cool-5: #00ff2a;
-      --color-cool-5-25: rgba(11, 10, 19, 0.25);
-      --color-cool-5-50: rgba(11, 10, 19, 0.5);
-      --color-cool-5-75: rgba(11, 10, 19, 0.75);
-      --color-cool-5-90: rgba(11, 10, 19, 0.9);
-      --color-light-1: #00ff2a;
-      --color-light-2: #00ff2a;
-      --color-light-3: #00ff2a;
-      --color-light-4: #00ff2a;
-      --color-light-5: #00ff2a;
-      --color-light-6: #00ff2a;
-      --color-dark-1: #00ff2a;
-      --color-dark-2: #00ff2a;
-      --color-dark-3: #00ff2a;
-      --color-dark-4: #00ff2a;
-      --color-dark-5: #00ff2a;
-      --color-dark-6: #00ff2a;
+		--input-background-color: #00ff2a;
+		--input-color-border: #00ff2a;
+		--input-color-text: #00ff2a;
+		--input-placeholder-color: #00ff2a;
+		--input-focus-outline-color: #00ff2a;
+
+		--color-bg-btn-minor-inactive: #00ff2a;
+		--color-bg-btn-minor-active: #00ff2a;
+		--color-border-light-tertiary: #00ff2a;
+		--color-border-dark-primary: #00ff2a;
+
+		--background: #00ff2a;
+		--color-text-primary: #00ff2a;
+		--color-header-background: #00ff2a;
+		--color-border: #00ff2a;
+		--color-fieldset-border: #00ff2a;
+		--color-form-hint: #00ff2a;
+		--color-form-hint-hover: #00ff2a;
+		--color-form-label: #00ff2a;
+		--color-form-label-hover: #00ff2a;
+
+		--color-text-light-highlight: #00ff2a;
+		--color-text-light-heading: #00ff2a;
+		--color-text-light-primary: #00ff2a;
+
+		--color-text-dark-alternate: #00ff2a;
+
+		--color-text-dark-inactive: #00ff2a;
+		--color-text-hyperlink: #00ff2a;
+
+		--color-text-light-1: #00ff2a;
 
 
-      --dnd5e-color-black: #00ff2a;
-      --dnd5e-color-dark: #00ff2a;
-      --dnd5e-color-faint: #00ff2a;
-      --dnd5e-color-beige: #00ff2a;
-      --dnd5e-color-tan: #00ff2a;
-      --dnd5e-color-olive: #00ff2a;
-      --dnd5e-color-crimson: #00ff2a;
-      --dnd5e-color-groove: #00ff2a;
-      --dnd5e-color-gold: #00ff2a;
-      --dnd5e-color-red: #00ff2a;
-      --dnd5e-color-blue: cornflowerblue;
-      --dnd5e-color-green: #00ff2a;
-      --dnd5e-color-maroon: #00ff2a;
-      --dnd5e-color-parchment: #00ff2a;
-      --dnd5e-color-purple: #00ff2a;
-      --dnd5e-color-scrollbar: var(--dnd5e-color-gold);
-      --dnd5e-color-card: #00ff2a;
-      --dnd5e-color-hp-1: #00ff2a;
-      --dnd5e-color-hp-2: #00ff2a;
-      --dnd5e-color-hp-3: #00ff2a;
-      --dnd5e-color-hd-1: #00ff2a;
-      --dnd5e-color-hd-2: var(--dnd5e-color-maroon);
-      --dnd5e-color-hd-3: #00ff2a;
-      --dnd5e-color-sc-1: #00ff2a;
-      --dnd5e-color-sc-2: #00ff2a;
-      --dnd5e-color-blue-white: #00ff2a;
-      --dnd5e-color-blue-gray-1: #00ff2a;
-      --dnd5e-color-blue-gray-2: #00ff2a;
-      --dnd5e-color-blue-gray-3: #00ff2a;
-      --dnd5e-color-iron-gray: #00ff2a;
-      --dnd5e-color-light-gray: #00ff2a;
-      --dnd5e-color-dark-gray: #00ff2a;
-      --dnd5e-color-success: #00ff2a;
-      --dnd5e-color-success-background: rgb(204, 215, 197);
-      --dnd5e-color-success-critical: green;
-      --dnd5e-color-failure: #00ff2a;
-      --dnd5e-color-failure-background: rgb(245, 221, 221);
-      --dnd5e-color-failure-critical: red;
-      --dnd5e-color-application-damage: #00ff2a;
-      --dnd5e-color-application-healing: #00ff2a;
-      --dnd5e-color-application-temp: #00ff2a;
-      --dnd5e-background-25: rgba(0, 0, 0, 0.25);
-      --dnd5e-background-10: rgba(0, 0, 0, 0.1);
-      --dnd5e-background-5: rgba(0, 0, 0, 0.05);
-      --dnd5e-background-card: var(--dnd5e-color-card);
-      --dnd5e-background-parchment: var(--dnd5e-color-parchment);
-      --dnd5e-border-dark: 1px solid #00ff2a;
-      --dnd5e-border-light: 1px solid #00ff2a;
-      --dnd5e-border-groove: 2px groove var(--dnd5e-color-groove);
-      --dnd5e-border-dotted: 1px dotted #00ff2a;
-   }
+		--color-border-light-1: #00ff2a;
+
+
+		--color-border-light-highlight: #00ff2a;
+		--color-border-light-primary: #00ff2a;
+		--color-border-light-alternate: #00ff2a;
+
+		--color-border-dark: #00ff2a;
+
+		--color-border-dark-alternate: #00ff2a;
+		--color-border-dark-tertiary: #00ff2a;
+		--color-border-highlight: #00ff2a;
+		--color-border-highlight-alt: #00ff2a;
+
+		--color-shadow-primary: #00ff2a;
+		--color-shadow-highlight: #00ff2a;
+		--color-shadow-dark: #00ff2a;
+
+		--color-text-light-0: #00ff2a;
+
+		--color-text-light-2: #00ff2a;
+		--color-text-light-3: #00ff2a;
+		--color-text-light-4: #00ff2a;
+		--color-text-light-5: #00ff2a;
+		--color-text-light-6: #00ff2a;
+		--color-text-light-7: #00ff2a;
+
+
+
+		--color-border-light-2: #00ff2a;
+
+
+
+		--color-underline-inactive: #00ff2a;
+		--color-underline-active: #00ff2a;
+		--color-underline-header: #00ff2a;
+
+		--color-checkbox-checked: #00ff2a;
+		--color-ownership-none: #00ff2a;
+		--color-ownership-observer: #00ff2a;
+		--color-ownership-owner: #00ff2a;
+
+
+
+		--color-warm-1: #00ff2a;
+		--color-warm-2: #00ff2a;
+		--color-warm-3: #00ff2a;
+		--color-cool-3: #00ff2a;
+		--color-cool-4: #00ff2a;
+		--color-cool-5: #00ff2a;
+		--color-cool-5-25: rgba(11, 10, 19, 0.25);
+		--color-cool-5-50: rgba(11, 10, 19, 0.5);
+		--color-cool-5-75: rgba(11, 10, 19, 0.75);
+		--color-cool-5-90: rgba(11, 10, 19, 0.9);
+		--color-light-1: #00ff2a;
+		--color-light-2: #00ff2a;
+		--color-light-3: #00ff2a;
+		--color-light-4: #00ff2a;
+		--color-light-5: #00ff2a;
+		--color-light-6: #00ff2a;
+
+
+
+		--dnd5e-color-black: #00ff2a;
+
+		--dnd5e-color-faint: #00ff2a;
+		--dnd5e-color-beige: #00ff2a;
+
+		--dnd5e-color-crimson: #00ff2a;
+		--dnd5e-color-groove: #00ff2a;
+		--dnd5e-color-gold: #00ff2a;
+		--dnd5e-color-red: #00ff2a;
+		--dnd5e-color-blue: cornflowerblue;
+		--dnd5e-color-green: #00ff2a;
+		--dnd5e-color-maroon: #00ff2a;
+
+		--dnd5e-color-purple: #00ff2a;
+		--dnd5e-color-scrollbar: var(--dnd5e-color-gold);
+
+		--dnd5e-color-hp-1: #00ff2a;
+		--dnd5e-color-hp-2: #00ff2a;
+		--dnd5e-color-hp-3: #00ff2a;
+		--dnd5e-color-hd-1: #00ff2a;
+		--dnd5e-color-hd-2: var(--dnd5e-color-maroon);
+		--dnd5e-color-hd-3: #00ff2a;
+		--dnd5e-color-sc-1: #00ff2a;
+		--dnd5e-color-sc-2: #00ff2a;
+		--dnd5e-color-blue-white: #00ff2a;
+		--dnd5e-color-blue-gray-1: #00ff2a;
+		--dnd5e-color-blue-gray-2: #00ff2a;
+		--dnd5e-color-blue-gray-3: #00ff2a;
+		--dnd5e-color-iron-gray: #00ff2a;
+		--dnd5e-color-light-gray: #00ff2a;
+		--dnd5e-color-dark-gray: #00ff2a;
+		--dnd5e-color-success: #00ff2a;
+		--dnd5e-color-success-background: rgb(204, 215, 197);
+		--dnd5e-color-success-critical: green;
+		--dnd5e-color-failure: #00ff2a;
+		--dnd5e-color-failure-background: rgb(245, 221, 221);
+		--dnd5e-color-failure-critical: red;
+		--dnd5e-color-application-damage: #00ff2a;
+		--dnd5e-color-application-healing: #00ff2a;
+		--dnd5e-color-application-temp: #00ff2a;
+		--dnd5e-background-25: rgba(0, 0, 0, 0.25);
+		--dnd5e-background-10: rgba(0, 0, 0, 0.1);
+		--dnd5e-background-5: rgba(0, 0, 0, 0.05);
+		--dnd5e-background-card: var(--dnd5e-color-card);
+		--dnd5e-background-parchment: var(--dnd5e-color-parchment);
+		--dnd5e-border-dark: 1px solid #00ff2a;
+		--dnd5e-border-light: 1px solid #00ff2a;
+		--dnd5e-border-groove: 2px groove var(--dnd5e-color-groove);
+		--dnd5e-border-dotted: 1px dotted #00ff2a;
+	}
 
 /*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
 
